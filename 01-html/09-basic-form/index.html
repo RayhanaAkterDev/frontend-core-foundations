@@ -1,0 +1,101 @@
+<!--
+    Topic: HTML Forms
+    Purpose: Demonstrates a properly structured, accessible HTML form with semantic tags, visible labels, placeholders, and ARIA attributes for clarity and better UX.
+    Features:
+        - Use of <form>, <fieldset>, <legend>, <label>, <input>, and <textarea> elements
+        - Accessible labels linked with input fields
+        - ARIA attributes for enhanced screen reader support
+        - Required fields and placeholders for better UX
+        - Proper use of autocomplete and titles
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-09
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Forms</title>
+        <meta
+            name="description"
+            content="Template page demonstrating HTML forms."
+        />
+        <meta
+            name="keywords"
+            content="HTML Forms, Accessible Forms, Form Labels, ARIA, Input Fields, Textarea, Fieldset, Form UX"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+    </head>
+    <body>
+        <main>
+            <h1>📝 HTML Contact Form</h1>
+
+            <p id="form-desc">
+                Please fill out the form below. All fields are required unless
+                otherwise stated.
+            </p>
+
+            <form
+                action="/submit"
+                method="post"
+                aria-describedby="form-desc"
+                novalidate
+            >
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <!-- Name -->
+                    <div>
+                        <label for="name">Full Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            aria-required="true"
+                            autocomplete="name"
+                            placeholder="Jane Doe"
+                            title="Enter your full name"
+                        />
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            aria-required="true"
+                            autocomplete="email"
+                            placeholder="you@example.com"
+                            title="Enter your valid email address"
+                        />
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message">Your Message:</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            cols="40"
+                            autocomplete="off"
+                            placeholder="Write your message here..."
+                            title="Type your message here"
+                            aria-label="Message text area"
+                            required
+                            aria-required="true"
+                        ></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
