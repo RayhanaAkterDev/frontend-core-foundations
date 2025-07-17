@@ -1,0 +1,95 @@
+<!--
+    Topic: HTML Images and Media
+    Purpose: Demonstrates usage of images, audio, video, and embedded iframes in HTML
+    Features:
+        - Image embedding with absolute and relative paths
+        - Image optimization with loading attribute and dimensions
+        - Audio and video players with essential attributes for control and UX
+        - Embedded YouTube video using iframe with accessibility and security attributes
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-08
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags for character encoding, responsiveness, SEO -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstration of HTML images, audio, video, and embedded media using iframes."
+        />
+        <meta
+            name="keywords"
+            content="HTML Media, Images, Audio, Video, iframe, Embedding Media"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+
+        <!-- Page title -->
+        <title>HTML Images and Media</title>
+    </head>
+    <body>
+        <h1>HTML Images and Media</h1>
+
+        <!-- Image using absolute URL with width, height, alt text, title, and lazy loading -->
+        <figure>
+            <img
+                src="https://images.unsplash.com/photo-1746908592757-2c1d682b71db?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                width="600"
+                height="350"
+                alt="Online image from Unsplash showing natural scenery"
+                title="Click for details"
+                loading="lazy"
+            />
+            <figcaption>Online image from Unsplash</figcaption>
+        </figure>
+
+        <!-- Image using relative path with width, alt text, and lazy loading -->
+        <figure>
+            <img
+                src="../../assets/images/dog-image.jpeg"
+                width="400"
+                alt="Local photo of a dog"
+                loading="lazy"
+            />
+            <figcaption>Local image of a dog</figcaption>
+        </figure>
+
+        <hr />
+
+        <!-- Audio player with controls and fallback text -->
+        <h2>Audio Example</h2>
+        <audio controls>
+            <source src="song.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Video player with controls, autoplay, loop, muted attributes and fallback text -->
+        <h2>Video Example</h2>
+        <video width="600" controls autoplay loop muted>
+            <source
+                src="../../assets/videos/local-video.mp4"
+                type="video/mp4"
+            />
+            Your browser does not support the video tag.
+        </video>
+
+        <hr />
+
+        <!-- Embedded YouTube video with accessibility and security best practices -->
+        <h2>Embedded YouTube Video</h2>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CFiCdpnn-jo?si=uoUpnZQQbPIjcfGr"
+            title="YouTube video player showing tutorial content"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+    </body>
+</html>
