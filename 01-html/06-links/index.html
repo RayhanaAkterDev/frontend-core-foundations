@@ -1,0 +1,91 @@
+<!--
+    Topic: HTML Links (Anchor Elements)
+    Purpose: Demonstrate usage and types of HTML anchor (<a>) elements
+    Features:
+        - Basic internal and external links
+        - Links opening in new tab/window
+        - Link with title attribute
+        - Email link using mailto
+        - Telephone link using tel
+        - Link wrapping block elements (HTML5 allowed)
+        - Anchor links within the same page
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-17
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="HTML anchor element examples showing different types of links." />
+    <meta name="keywords" content="HTML links, anchor tag, mailto, tel, target attribute" />
+    <meta name="author" content="Rayhana Akter Sumaya" />
+    <title>HTML Links (Anchor Elements)</title>
+</head>
+<body>
+    <main>
+        <h1>HTML Links (Anchor Elements)</h1>
+
+        <!-- Example 1: Basic external link opening in a new tab with accessibility improvements -->
+        <section>
+            <h2>1. Basic External Link</h2>
+            <p>
+                Visit
+                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" title="Example Website">
+                    Example.com
+                </a>
+                for more information.
+            </p>
+        </section>
+
+        <!-- Example 2: Internal page anchor link to jump to a specific section -->
+        <section>
+            <h2>2. Basic Internal Link</h2>
+            <p>
+                Go to
+                <a href="#section2" title="Jump to Section 2">Section 2</a>
+                below on this page.
+            </p>
+        </section>
+
+        <!-- Example 3: Email link to open user's default mail client -->
+        <section>
+            <h2>3. Email Link</h2>
+            <p>
+                Contact us at
+                <a href="mailto:support@example.com" title="Send Email">support@example.com</a>.
+            </p>
+        </section>
+
+        <!-- Example 4: Telephone link to initiate a call on supported devices -->
+        <section>
+            <h2>4. Telephone Link</h2>
+            <p>
+                Call us at
+                <a href="tel:+1234567890" title="Call Phone Number">+1 234 567 890</a>.
+            </p>
+        </section>
+
+        <!-- Example 5: Wrapping block elements inside a link for clickable content area (HTML5 valid) -->
+        <section>
+            <h2 id="section2">5. Link Wrapping Block Elements</h2>
+            <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" title="Example Website">
+                <div style="border: 1px solid #ccc; padding: 10px;">
+                    <h3>Clickable Box Link</h3>
+                    <p>This entire block is clickable as a link.</p>
+                </div>
+            </a>
+        </section>
+
+        <!-- Example 6: Anchor link back to the top of the page -->
+        <section>
+            <h2>6. Anchor Link (Back to Top)</h2>
+            <p>
+                <a href="#top" title="Back to Top">Back to Top</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
