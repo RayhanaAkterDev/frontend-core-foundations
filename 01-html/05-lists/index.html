@@ -1,0 +1,164 @@
+<!--
+    Topic: HTML Lists – Advanced Usage
+    Purpose: Demonstrate full capabilities of HTML list elements, including nesting, attributes, and accessibility
+    Features:
+        - All 3 core list types: <ul>, <ol>, <dl>
+        - Nested unordered and ordered lists
+        - Ordered lists with type, start, and reversed attributes
+        - Custom list markers using CSS
+        - Multi-column list layout using CSS
+        - Definition list with multiple <dd> per <dt>
+        - Semantic and accessible navigation list with <nav> and aria-label
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-17
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Advanced examples of HTML lists: ul, ol, dl with attributes and nesting."
+        />
+        <meta
+            name="keywords"
+            content="HTML lists, nested lists, ol types, reversed list, dl structure"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Advanced HTML Lists</title>
+
+        <!-- Internal CSS for layout and customization -->
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+            }
+
+            section {
+                margin-bottom: 30px;
+            }
+
+            /* Custom list marker using ::marker pseudo-element */
+            .custom-bullet li::marker {
+                color: crimson;
+                content: '★ ';
+            }
+
+            /* Display list items in multiple columns */
+            .multi-column {
+                column-count: 2;
+                column-gap: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Advanced HTML Lists</h1>
+
+        <!-- Unordered list with nested sublists -->
+        <section>
+            <h2>1. Unordered List (with Nested Lists)</h2>
+            <ul>
+                <li>
+                    Frontend
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+                <li>
+                    Backend
+                    <ul>
+                        <li>Node.js</li>
+                        <li>PHP</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Ordered list using uppercase Roman numerals -->
+        <section>
+            <h2>2. Ordered List with Type</h2>
+            <ol type="I">
+                <li>Install Code Editor</li>
+                <li>Write HTML Code</li>
+                <li>Test in Browser</li>
+            </ol>
+        </section>
+
+        <!-- Ordered list starting from a specific number -->
+        <section>
+            <h2>3. Ordered List (Start From 5)</h2>
+            <ol start="5">
+                <li>Get Domain</li>
+                <li>Setup Hosting</li>
+            </ol>
+        </section>
+
+        <!-- Ordered list with descending order using reversed attribute -->
+        <section>
+            <h2>4. Reversed Ordered List</h2>
+            <ol reversed>
+                <li>Backup Files</li>
+                <li>Compress Project</li>
+                <li>Upload to Server</li>
+            </ol>
+        </section>
+
+        <!-- Unordered list with custom star-shaped marker -->
+        <section>
+            <h2>5. Custom Marker Using CSS</h2>
+            <ul class="custom-bullet">
+                <li>Accessibility</li>
+                <li>Responsiveness</li>
+                <li>Performance</li>
+            </ul>
+        </section>
+
+        <!-- Multi-column layout for long unordered lists -->
+        <section>
+            <h2>6. Multi-Column List Layout</h2>
+            <ul class="multi-column">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Netlify</li>
+                <li>Vercel</li>
+                <li>Firebase</li>
+                <li>Heroku</li>
+            </ul>
+        </section>
+
+        <!-- Definition list with multiple <dd> values per <dt> -->
+        <section>
+            <h2>7. Definition List with Multiple Descriptions</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Defines structure of the webpage.</dd>
+                <dd>
+                    Used with elements like headings, paragraphs, links, etc.
+                </dd>
+
+                <dt>CSS</dt>
+                <dd>Controls styling and layout.</dd>
+
+                <dt>JS</dt>
+                <dd>Adds interactivity and browser-side logic.</dd>
+            </dl>
+        </section>
+
+        <!-- Semantic navigation list with ARIA label for accessibility -->
+        <section>
+            <h2>8. Semantic Use in Navigation (Screen Reader Friendly)</h2>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </body>
+</html>
