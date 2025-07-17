@@ -8,7 +8,7 @@ This repository is organized to cover all the essential building blocks needed t
 
 ## 1. HTML Fundamentals
 
-- HTML boilerplate structure
+- [HTML basic structure](/01-html/01-html-basic-structure/README.md)
 - Semantic HTML
 - Forms and input types
 - Media tags (images, videos, audio)
