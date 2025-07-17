@@ -52,3 +52,9 @@ HTML (HyperText Markup Language) is the foundational markup language used to cre
 ## Code Example
 
 - [HTML Basic Structure Example (index.html)](index.html) — A practical, minimal HTML5 template demonstrating all the discussed core elements and best practices.
+
+---
+
+## 🔙 Navigation
+
+[← Back to HTML Fundamentals](../README.md)
