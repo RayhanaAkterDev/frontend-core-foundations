@@ -1,0 +1,118 @@
+<!--
+    Topic: Form Validation (HTML Only)
+    Purpose: Demonstrates native HTML5 form validation attributes for client-side validation without JavaScript.
+    Features:
+        - Use of required, pattern, minlength, min, max attributes
+        - Validation of username, email, password, age, and optional URL
+        - Checkbox for terms acceptance with required attribute
+        - Usage of title attributes for user guidance
+        - Form elements grouped inside <fieldset> with <legend> for accessibility
+        - Native validation messages triggered on submit
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Template demonstrating HTML5 native form validation."
+        />
+        <meta
+            name="keywords"
+            content="HTML5 Form Validation, Native Validation, Required Fields, Pattern Attribute, Input Validation, Client-Side Validation, Accessibility"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Form Validation</title>
+    </head>
+    <body>
+        <h1>HTML Form Validation (Native)</h1>
+        <p>* Required field</p>
+
+        <!-- Form starts here -->
+        <form action="/submit-validation" method="post" novalidate>
+            <p>Try submitting the form to see validation messages.</p>
+
+            <!-- Grouping form fields with fieldset for accessibility -->
+            <fieldset>
+                <legend>Registration Form</legend>
+
+                <!-- Username input with pattern validation -->
+                <label for="username">Username* (5-15 letters/numbers):</label><br />
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    pattern="^[a-zA-Z0-9]{5,15}$"
+                    required
+                    title="5 to 15 alphanumeric characters"
+                    autocomplete="username"
+                />
+                <br /><br />
+
+                <!-- Email input with required attribute -->
+                <label for="email">Email*:</label><br />
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    title="Please enter a valid email address"
+                />
+                <br /><br />
+
+                <!-- Password input with minlength validation -->
+                <label for="password">Password* (min 6 chars):</label><br />
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    minlength="6"
+                    required
+                    title="At least 6 characters"
+                    autocomplete="new-password"
+                />
+                <br /><br />
+
+                <!-- Age input with min and max validation -->
+                <label for="age">Age* (18 to 99):</label><br />
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="18"
+                    max="99"
+                    required
+                    title="Enter age between 18 and 99"
+                />
+                <br /><br />
+
+                <!-- Optional website URL input -->
+                <label for="website">Website (optional, URL format):</label><br />
+                <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    placeholder="https://example.com"
+                    title="Enter a valid URL starting with http:// or https://"
+                    autocomplete="off"
+                />
+                <br /><br />
+
+                <!-- Terms and conditions checkbox with required attribute -->
+                <input type="checkbox" id="terms" name="terms" required />
+                <label for="terms">Accept terms and conditions*</label>
+                <br /><br />
+
+                <!-- Form submission and reset buttons -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
