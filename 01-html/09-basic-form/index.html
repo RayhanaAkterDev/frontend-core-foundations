@@ -30,23 +30,27 @@
     </head>
     <body>
         <main>
+            <!-- Main heading -->
             <h1>📝 HTML Contact Form</h1>
 
+            <!-- Description for the form -->
             <p id="form-desc">
                 Please fill out the form below. All fields are required unless
                 otherwise stated.
             </p>
 
+            <!-- Contact form -->
             <form
                 action="/submit"
                 method="post"
                 aria-describedby="form-desc"
                 novalidate
             >
+                <!-- Grouping contact information fields -->
                 <fieldset>
                     <legend>Contact Information</legend>
 
-                    <!-- Name -->
+                    <!-- Name input field with label -->
                     <div>
                         <label for="name">Full Name:</label>
                         <input
@@ -61,7 +65,7 @@
                         />
                     </div>
 
-                    <!-- Email -->
+                    <!-- Email input field with label -->
                     <div>
                         <label for="email">Email Address:</label>
                         <input
@@ -76,7 +80,7 @@
                         />
                     </div>
 
-                    <!-- Message -->
+                    <!-- Message textarea with label -->
                     <div>
                         <label for="message">Your Message:</label>
                         <textarea
@@ -94,6 +98,7 @@
                     </div>
                 </fieldset>
 
+                <!-- Submit button -->
                 <button type="submit">Submit</button>
             </form>
         </main>

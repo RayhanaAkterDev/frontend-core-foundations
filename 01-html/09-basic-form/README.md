@@ -1,81 +1,59 @@
-# HTML Forms
+# HTML Forms (Basic Form)
 
-> Tags: html-forms, semantic-html, accessibility, aria  
-> **Purpose:** To understand and practice creating accessible, semantic HTML forms using labels, placeholders, ARIA attributes, field grouping, and proper UX-focused attributes.
+> Tags: html-forms, accessible-forms, semantic-html, aria  
+> **Purpose:** Demonstrates a properly structured, accessible HTML form with semantic tags, visible labels, placeholders, and ARIA attributes for clarity and better UX.
 
 ---
 
 ## Overview
 
-HTML forms are used to collect user input. Proper use of semantic elements, labels, and ARIA attributes enhances form usability and accessibility, especially for screen reader users. Grouping related fields using `<fieldset>` and describing them with `<legend>` ensures a more inclusive and understandable structure.
+This topic covers the basics of creating HTML forms using semantic and accessible markup. It focuses on using `<form>`, `<fieldset>`, `<legend>`, `<label>`, `<input>`, and `<textarea>` elements properly to build a user-friendly contact form. The use of ARIA attributes enhances support for assistive technologies, and placeholders and titles improve the user experience.
 
 ---
 
 ## Detailed Explanation of Core Elements
 
+### Input Types Used
+
+- `text` — for entering full name.  
+- `email` — for email address.  
+- `textarea` — for multi-line message input.
+
 ### `<form>`
 
-- Wraps all input fields and controls.  
-- Use `action` to define the submission target and `method` for HTTP behavior (`post` or `get`).  
-- Use `aria-describedby` to link to helper text for screen readers.
-
----
+- Wraps the entire form, defining submission behavior using `action` and `method` attributes.
+- `aria-describedby` connects the form to descriptive text for screen readers.
+- `novalidate` disables built-in validation to be handled separately if desired.
 
 ### `<fieldset>` and `<legend>`
 
-- `<fieldset>` groups related input fields logically.  
-- `<legend>` describes the purpose of the group.  
-- Together, they improve both visual organization and screen reader comprehension.
-
----
+- `<fieldset>` groups related inputs to provide logical sections.
+- `<legend>` labels the group, improving both visual organization and accessibility.
 
 ### `<label>`
 
-- Describes an input’s purpose.  
-- Connects using the `for` attribute (which must match the input’s `id`).  
-- Crucial for accessibility and screen reader compatibility.
+- Associates visible text with form controls via the `for` attribute matching the input’s `id`.
+- Essential for accessibility and click-target usability.
 
----
+### `<input>` and `<textarea>`
 
-### `<input>`
-
-- Captures single-line user input (e.g., name, email).  
-- Common attributes:  
-  - `required` → Ensures the field must be filled before submission  
-  - `autocomplete` → Enables autofill (e.g., `name`, `email`)  
-  - `placeholder` → Shows example input text  
-  - `title` → Adds tooltip info on hover  
-  - `aria-required="true"` → Clarifies the requirement to screen readers
-
----
-
-### `<textarea>`
-
-- Captures multi-line input such as messages.  
-- Can use `placeholder`, `title`, and `autocomplete="off"` for privacy.
-
----
-
-### ARIA Attributes
-
-- `aria-describedby` → Associates the form or a specific input with visible help or instruction text.  
-- `aria-required="true"` → Helps assistive technologies recognize required fields, especially when paired with the `required` attribute.
+- Capture user input for different types of data.
+- Attributes like `required`, `aria-required`, `autocomplete`, `placeholder`, and `title` improve UX and accessibility.
 
 ---
 
 > 🧠 **Pro Tip**
 >
-> 1. Use semantic grouping with `<fieldset>` and `<legend>`  
-> 2. Always pair inputs with visible `<label>` elements  
-> 3. Add `aria-describedby` to connect to visible form instructions  
-> 4. Use both `required` and `aria-required="true"` for maximum accessibility  
-> 5. Avoid relying only on `placeholder`; it disappears when typing
+> 1. Always associate labels with inputs using `for` and `id`.  
+> 2. Group related inputs with `<fieldset>` and `<legend>`.  
+> 3. Use ARIA attributes to enhance screen reader support.  
+> 4. Use placeholders and titles thoughtfully to guide users.
 
 ---
 
-## Code Example
+## Code Example Reference
 
-- [HTML Forms Example (index.html)](index.html) — Demonstrates a contact form with semantic structure, visible labels, placeholders, ARIA support, and required fields.
+- [Basic Form Example (index.html)](index.html) — Shows an accessible contact form with semantic markup and ARIA support.
 
 ---
 
