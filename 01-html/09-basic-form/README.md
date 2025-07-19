@@ -42,12 +42,12 @@ This topic covers the basics of creating HTML forms using semantic and accessibl
 
 ---
 
-> 🧠 Pro Tip
->
-> 1. Always associate labels with inputs using `for` and `id`.  
-> 2. Group related inputs with `<fieldset>` and `<legend>`.  
-> 3. Use ARIA attributes to enhance screen reader support.  
-> 4. Use placeholders and titles thoughtfully to guide users.
+## 💡 Pro Tip
+
+1. Always associate labels with inputs using `for` and `id`.
+2. Group related inputs with `<fieldset>` and `<legend>`.
+3. Use ARIA attributes to enhance screen reader support.
+4. Use placeholders and titles thoughtfully to guide users.
 
 ---
 
