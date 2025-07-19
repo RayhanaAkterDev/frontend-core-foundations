@@ -1,0 +1,74 @@
+/*
+    base.css
+    Date: 2025-07-19
+    Author: Rayhana Akter Sumaya
+    Purpose:
+        - Common layout, typography, and container styles for all CSS topics
+        - Consistent body styling and section containers
+        - Typography base styles for headings, paragraphs, and lists
+    Usage:
+        Link this after reset.css and before topic-specific styles.
+*/
+
+/* Body and page layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dddfe2;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+}
+
+/* Section container with border and shadow */
+section {
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    border: 2px solid #3498db;
+    box-shadow: 0 3px 10px rgba(52, 152, 219, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+}
+
+/* Paragraphs and lists */
+p,
+ul,
+li {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+/* Utility to style inline code elements */
+code {
+    background-color: #eaeaea;
+    padding: 0.15em 0.3em;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    font-size: 0.95em;
+}
+
+/* Add a subtle global link hover effect */
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: #005f99;
+}
