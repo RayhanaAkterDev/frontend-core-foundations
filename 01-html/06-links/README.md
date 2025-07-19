@@ -35,9 +35,9 @@ This topic covers common anchor usages and best practices for accessibility and 
 
 ---
 
-> 🧠 Pro Tip
->
-> _Always use meaningful `title` attributes on links to improve accessibility and provide additional context._
+## 💡 Pro Tip
+
+_Always use meaningful `title` attributes on links to improve accessibility and provide additional context._
 
 ---
 
