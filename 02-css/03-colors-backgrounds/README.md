@@ -71,6 +71,6 @@ See files in the _`css-colors-and-backgrounds`_ folder for a complete working de
 
 ---
 
-## 🔁 Navigation
+## 🔙 Navigation
 
-← [Back to Main CSS README](../README.md)
+- [← Back to CSS Topics](../README.md)
