@@ -21,11 +21,13 @@ Headings and paragraphs are fundamental block-level elements in HTML that organi
 
 ---
 
-> 🧠 **Pro Tip:** Use heading elements in a logical order without skipping levels to maintain a clear document outline that benefits SEO and screen readers.
+> 🧠 Pro Tip
+>
+> Use heading elements in a logical order without skipping levels to maintain a clear document outline that benefits SEO and screen readers.
 
 ---
 
-## Code Example
+## 🧪 Code Example Reference
 
 - [HTML Headings and Paragraphs Example (index.html)](index.html) — A practical demonstration of all heading levels and paragraph usage.
 
