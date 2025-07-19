@@ -52,7 +52,7 @@ This topic extends basic form knowledge by introducing advanced form elements an
 
 ---
 
-> 🧠 **Pro Tip**
+> 🧠 Pro Tip
 >
 > 1. Use specific input types to leverage native UI controls (e.g., date pickers, color pickers).  
 > 2. Group inputs logically to improve both accessibility and UX.  
@@ -61,7 +61,7 @@ This topic extends basic form knowledge by introducing advanced form elements an
 
 ---
 
-## Code Example Reference
+## 🧪 Code Example Reference
 
 - [Advanced Form Elements Example (index.html)](index.html) — Demonstrates a form using advanced input types, grouping, and accessibility features.
 
