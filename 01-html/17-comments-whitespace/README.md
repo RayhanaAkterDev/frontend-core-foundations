@@ -31,10 +31,10 @@ This section introduces how comments and whitespace work in HTML. Comments help 
 - Example:
 
 ```html
-    <!--  
-      This is a
-      multi-line comment
-    -->
+<!--  
+  This is a
+  multi-line comment
+-->
 ```
 
 ### 3. HTML Whitespace Behavior
