@@ -48,9 +48,9 @@ This section introduces the fundamental usage of the `<script>` tag in HTML to r
 
 ## 💡 Pro Tip
 
-- Avoid using `alert()` for debugging—use `console.log()` instead.
-- Always place scripts at the end of the `<body>` or use `defer` in the `<head>` to avoid blocking page load.
-- Keep JavaScript in external files for cleaner HTML and reusable code.
+1. Avoid using `alert()` for debugging—use `console.log()` instead.
+2. Always place scripts at the end of the `<body>` or use `defer` in the `<head>` to avoid blocking page load.
+3. Keep JavaScript in external files for cleaner HTML and reusable code.
 
 ---
 
