@@ -38,11 +38,13 @@ Advanced list handling includes nesting, attribute customization (`type`, `start
 
 ---
 
-> 🧠 **Pro Tip:** Always use semantic list structures over manually numbered or styled items. It improves readability, accessibility, and search engine understanding.
+> 🧠 Pro Tip
+>
+> _Always use semantic list structures over manually numbered or styled items. It improves readability, accessibility, and search engine understanding._
 
 ---
 
-## Code Example
+## 🧪 Code Example Reference
 
 - [Advanced HTML Lists Example (index.html)](index.html) — Demonstrates nested lists, custom types, reversed sequences, multi-column layouts, and semantic structures.
 
