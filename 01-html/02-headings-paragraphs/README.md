@@ -23,7 +23,7 @@ Headings and paragraphs are fundamental block-level elements in HTML that organi
 
 > 🧠 Pro Tip
 >
-> Use heading elements in a logical order without skipping levels to maintain a clear document outline that benefits SEO and screen readers.
+> _Use heading elements in a logical order without skipping levels to maintain a clear document outline that benefits SEO and screen readers._
 
 ---
 
