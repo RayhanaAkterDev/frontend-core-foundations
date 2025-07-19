@@ -40,12 +40,12 @@ These tags not only improve SEO and content readability but also make your site 
 
 ---
 
-> 🧠 Pro Tip
->
-> 1. Always provide `tabindex="-1"` on `<main>` or target elements of skip links to make them programmatically focusable.  
-> 2. Use `aria-label` to describe navigation, footer, or complementary regions for better screen reader context.  
-> 3. Keep heading structure consistent to guide both users and search engines through your content logically.  
-> 4. Semantic HTML not only improves accessibility but also helps with SEO and future maintenance.
+## 💡 Pro Tip
+
+1. Always provide `tabindex="-1"` on `<main>` or target elements of skip links to make them programmatically focusable.
+2. Use `aria-label` to describe navigation, footer, or complementary regions for better screen reader context.
+3. Keep heading structure consistent to guide both users and search engines through your content logically.
+4. Semantic HTML not only improves accessibility but also helps with SEO and future maintenance.
 
 ---
 
