@@ -1,0 +1,91 @@
+<!--
+    Topic: CSS Colors and Backgrounds (including Gradients & Multiple Backgrounds)
+    Purpose: To explore text colors, solid backgrounds, gradients, and layering multiple background images.
+    Features:
+        - Applying various color formats
+        - Background color and image settings
+        - Gradient backgrounds: linear and radial
+        - Layered multiple backgrounds
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-19
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Explore CSS color formats, background styles, gradients, and multiple backgrounds."
+        />
+        <meta
+            name="keywords"
+            content="CSS, Colors, Backgrounds, Gradients, Multiple Backgrounds, background-image"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Colors, Gradients & Backgrounds</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="page-header">
+            <h1>CSS Colors, Gradients & Backgrounds</h1>
+            <p>
+                Style your webpage using solid colors, gradients, and advanced
+                background layering.
+            </p>
+        </header>
+
+        <main class="page-content">
+            <!-- Text Colors -->
+            <section class="color-section">
+                <h2>Text Colors</h2>
+                <p class="color-named">Named Color: red</p>
+                <p class="color-hex">Hex Color: #4CAF50</p>
+                <p class="color-rgb">RGB Color: rgb(0, 128, 255)</p>
+                <p class="color-hsl">HSL Color: hsl(300, 70%, 60%)</p>
+                <p class="color-opacity">
+                    RGBA Color (opacity): rgba(255, 0, 0, 0.5)
+                </p>
+            </section>
+
+            <!-- Solid Backgrounds -->
+            <section class="background-section">
+                <h2>Solid Backgrounds</h2>
+                <div class="box box-bg-color">Solid Color Background</div>
+                <div class="box box-bg-image">Background Image</div>
+            </section>
+
+            <!-- Background Properties -->
+            <section class="advanced-backgrounds">
+                <h2>Background Properties</h2>
+                <div class="box box-repeat">Repeat</div>
+                <div class="box box-no-repeat">No Repeat</div>
+                <div class="box box-position">Positioned</div>
+                <div class="box box-size-cover">Size: Cover</div>
+                <div class="box box-size-contain">Size: Contain</div>
+            </section>
+
+            <!-- Gradients -->
+            <section class="gradients-section">
+                <h2>CSS Gradients</h2>
+                <div class="box box-gradient-linear">Linear Gradient</div>
+                <div class="box box-gradient-radial">Radial Gradient</div>
+                <div class="box box-gradient-multi">Multi-Stop Gradient</div>
+            </section>
+
+            <!-- Multiple Backgrounds -->
+            <section class="multi-bg-section">
+                <h2>Multiple Backgrounds</h2>
+                <div class="box box-multi-bg">Layered Backgrounds</div>
+            </section>
+        </main>
+    </body>
+</html>
