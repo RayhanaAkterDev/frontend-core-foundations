@@ -46,11 +46,11 @@ This section introduces how comments and whitespace work in HTML. Comments help 
 
 ---
 
-> 💡 Pro Tip
->
-> 1. Place comments before sections or major components to clarify structure.
-> 2. Use &nbsp; carefully—don't overdo spacing.
-> 3. Consider using `<pre>` or CSS white-space: pre when preserving formatting is necessary.
+## 💡 Pro Tip
+
+1. Place comments before sections or major components to clarify structure.
+2. Use `&nbsp;` carefully—don't overdo spacing.
+3. Consider using `<pre>` or CSS `white-space: pre` when preserving formatting is necessary.
 
 ---
 
