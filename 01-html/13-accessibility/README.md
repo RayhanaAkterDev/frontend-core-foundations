@@ -50,13 +50,13 @@ This topic covers essential HTML accessibility techniques to create inclusive we
 
 ---
 
-> 🧠 Pro Tip
->
-> 1. Always test your pages with keyboard-only navigation and screen readers.  
-> 2. Use ARIA only when native HTML cannot provide the required accessibility.  
-> 3. Ensure focus states are highly visible and consistent.  
-> 4. Keep skip links as the first focusable element in the document.  
-> 5. Use semantic HTML first before adding ARIA roles and properties.
+## 💡 Pro Tip
+
+1. Always test your pages with keyboard-only navigation and screen readers.
+2. Use ARIA only when native HTML cannot provide the required accessibility.
+3. Ensure focus states are highly visible and consistent.
+4. Keep skip links as the first focusable element in the document.
+5. Use semantic HTML first before adding ARIA roles and properties.
 
 ---
 
