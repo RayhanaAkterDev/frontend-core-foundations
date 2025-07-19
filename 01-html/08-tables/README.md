@@ -22,7 +22,7 @@ Tables organize tabular data in rows and columns. Proper use of semantic HTML ta
 
 ---
 
-> 🧠 **Pro Tip**
+> 🧠 Pro Tip
 >
 > Use semantic elements:
 > `<thead>`, `<tbody>`, `<caption>`
@@ -33,7 +33,7 @@ Tables organize tabular data in rows and columns. Proper use of semantic HTML ta
 
 ---
 
-## Code Example
+## 🧪 Code Example Reference
 
 - [HTML Tables Example (index.html)](index.html) — Demonstrates a semantic employee directory table with caption, headers, and clickable email links.
 
