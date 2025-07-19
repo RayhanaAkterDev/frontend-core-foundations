@@ -36,9 +36,9 @@ Understanding this distinction is essential for controlling layout and flow in a
 
 ---
 
-> 🧠 Pro Tip
->
-> _Use inline elements for formatting within text and block elements for structuring page sections or containers. Avoid placing block elements inside inline elements to maintain valid HTML._
+## 💡 Pro Tip
+
+_Use inline elements for formatting within text and block elements for structuring page sections or containers. Avoid placing block elements inside inline elements to maintain valid HTML._
 
 ---
 
