@@ -52,12 +52,12 @@ This topic extends basic form knowledge by introducing advanced form elements an
 
 ---
 
-> 🧠 Pro Tip
->
-> 1. Use specific input types to leverage native UI controls (e.g., date pickers, color pickers).  
-> 2. Group inputs logically to improve both accessibility and UX.  
-> 3. Use `<datalist>` for suggested input values.  
-> 4. Clearly mark required fields and use ARIA for assistive technologies.
+## 💡 Pro Tip
+
+1. Use specific input types to leverage native UI controls (e.g., date pickers, color pickers).
+2. Group inputs logically to improve both accessibility and UX.
+3. Use `<datalist>` for suggested input values.
+4. Clearly mark required fields and use ARIA for assistive technologies.
 
 ---
 
