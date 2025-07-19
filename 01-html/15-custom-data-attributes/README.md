@@ -46,7 +46,7 @@ HTML5 introduced `data-*` attributes to allow embedding custom, non-visible info
 
 ---
 
-## 💻 Code Example Reference
+## 🧪 Code Example Reference
 
 See: [`custom-data-attributes.html`](custom-data-attributes.html)
 
