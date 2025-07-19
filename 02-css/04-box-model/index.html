@@ -1,0 +1,71 @@
+<!--
+    Topic: Box Model
+    Purpose: To explain the CSS box model concept, illustrating how elements are structured with content, padding, border, and margin, and how these affect layout and spacing.
+    Features:
+        - Understanding content, padding, border, margin areas
+        - Box sizing properties (content-box, border-box)
+        - Visual demonstration with colored layers
+        - Practical CSS examples of box model usage
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-19
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Learn CSS Box Model: content, padding, border, margin, and box-sizing."
+        />
+        <meta
+            name="keywords"
+            content="CSS, Box Model, Padding, Border, Margin, Box Sizing"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Box Model</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>CSS Box Model</h1>
+            <p>
+                The CSS Box Model is a fundamental concept describing the
+                rectangular boxes generated for elements in the document tree.
+                Each box consists of four areas: content, padding, border, and
+                margin. Understanding how these layers interact helps control
+                layout and spacing effectively.
+            </p>
+
+            <section>
+                <h2>Example: Default Box Model (content-box)</h2>
+                <div class="box content-box-demo">
+                    Content-box box model<br />
+                    Width = 200px (content only)<br />
+                    Padding = 20px<br />
+                    Border = 5px solid blue<br />
+                    Margin = 30px
+                </div>
+            </section>
+
+            <section>
+                <h2>Example: Border-box Box Model</h2>
+                <div class="box border-box-demo">
+                    Border-box box model<br />
+                    Width = 200px (includes padding & border)<br />
+                    Padding = 20px<br />
+                    Border = 5px solid orange<br />
+                    Margin = 30px
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
