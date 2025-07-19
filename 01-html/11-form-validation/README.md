@@ -30,9 +30,9 @@ Form validation is essential to ensure that users provide the correct data befor
 
 ---
 
-> 🧠 Pro Tip:
->
-> _Native HTML5 validation reduces the need for complex JavaScript validation and improves accessibility by leveraging built-in browser features._
+## 💡 Pro Tip
+
+_Native HTML5 validation reduces the need for complex JavaScript validation and improves accessibility by leveraging built-in browser features._
 
 ---
 
