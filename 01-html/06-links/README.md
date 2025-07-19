@@ -35,11 +35,13 @@ This topic covers common anchor usages and best practices for accessibility and 
 
 ---
 
-> 🧠 **Pro Tip:** Always use meaningful `title` attributes on links to improve accessibility and provide additional context.
+> 🧠 Pro Tip
+>
+> _Always use meaningful `title` attributes on links to improve accessibility and provide additional context._
 
 ---
 
-## Code Example
+## 🧪 Code Example Reference
 
 - [HTML Links Example (index.html)](index.html) — Demonstrates different types of anchor links with practical examples.
 
