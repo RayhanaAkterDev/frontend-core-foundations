@@ -25,11 +25,13 @@ HTML text elements extend the functionality of block-level content by adding inl
 
 ---
 
-> 🧠 **Pro Tip:** Prefer semantic tags like `<strong>` and `<em>` over purely stylistic tags (`<b>`, `<i>`) to improve document meaning and accessibility.
+> 🧠 Pro Tip
+>
+> _Prefer semantic tags like `<strong>` and `<em>` over purely stylistic tags (`<b>`, `<i>`) to improve document meaning and accessibility._
 
 ---
 
-## Code Example
+## 🧪 Code Example Reference
 
 - [HTML Text Elements Example (index.html)](index.html) — Demonstrates line breaks, horizontal rules, and semantic inline formatting tags.
 
