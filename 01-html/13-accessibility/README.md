@@ -50,7 +50,7 @@ This topic covers essential HTML accessibility techniques to create inclusive we
 
 ---
 
-> 🧠 **Pro Tip**  
+> 🧠 Pro Tip
 >
 > 1. Always test your pages with keyboard-only navigation and screen readers.  
 > 2. Use ARIA only when native HTML cannot provide the required accessibility.  
@@ -60,7 +60,7 @@ This topic covers essential HTML accessibility techniques to create inclusive we
 
 ---
 
-## Code Example Reference
+## 🧪 Code Example Reference
 
 - [HTML Accessibility Template (index.html)](index.html) — Demonstrates comprehensive HTML accessibility features including semantic landmarks, ARIA roles, skip links, forms, live regions, and accessible tables.
 
