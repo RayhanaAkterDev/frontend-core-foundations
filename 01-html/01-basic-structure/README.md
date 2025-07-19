@@ -45,9 +45,9 @@ HTML (HyperText Markup Language) is the foundational markup language used to cre
 
 ---
 
-> 🧠 Pro Tip
->
-> _Fully mastering the HTML document structure is essential before adding CSS styles or JavaScript functionality, ensuring a solid foundation for accessible and maintainable web development._
+## 💡 Pro Tip
+
+_Fully mastering the HTML document structure is essential before adding CSS styles or JavaScript functionality. This ensures a solid foundation for accessible and maintainable web development._
 
 ---
 
