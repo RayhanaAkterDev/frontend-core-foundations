@@ -48,7 +48,7 @@ HTML5 introduced `data-*` attributes to allow embedding custom, non-visible info
 
 ## 🧪 Code Example Reference
 
-See: [`custom-data-attributes.html`](custom-data-attributes.html)
+- [Custom Data Attributes Example (index.html)](index.html) — Demonstrates how to embed and retrieve custom `data-*` attributes using JavaScript’s `dataset` API for dynamic interaction.
 
 ---
 
