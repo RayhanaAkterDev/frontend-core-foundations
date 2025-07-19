@@ -38,9 +38,9 @@ Advanced list handling includes nesting, attribute customization (`type`, `start
 
 ---
 
-> 🧠 Pro Tip
->
-> _Always use semantic list structures over manually numbered or styled items. It improves readability, accessibility, and search engine understanding._
+## 💡 Pro Tip
+
+_Always use semantic list structures over manually numbered or styled items. It improves readability, accessibility, and search engine understanding._
 
 ---
 
