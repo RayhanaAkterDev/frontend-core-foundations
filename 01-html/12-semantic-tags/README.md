@@ -40,7 +40,7 @@ These tags not only improve SEO and content readability but also make your site 
 
 ---
 
-> 🧠 **Pro Tip**
+> 🧠 Pro Tip
 >
 > 1. Always provide `tabindex="-1"` on `<main>` or target elements of skip links to make them programmatically focusable.  
 > 2. Use `aria-label` to describe navigation, footer, or complementary regions for better screen reader context.  
@@ -49,7 +49,7 @@ These tags not only improve SEO and content readability but also make your site 
 
 ---
 
-## Code Example Reference
+## 🧪 Code Example Reference
 
 - [Semantic Tags Template (index.html)](index.html) — Demonstrates proper use of semantic HTML5 layout, ARIA roles, skip links, and screen reader-friendly structure.
 
