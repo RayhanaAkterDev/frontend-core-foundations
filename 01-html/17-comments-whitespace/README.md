@@ -15,22 +15,26 @@ This section introduces how comments and whitespace work in HTML. Comments help 
 
 ### 1. HTML Comments
 
-- Begin with `<!--` and end with `-->`.
-- Ignored by the browser; useful for leaving notes or explanations in the code.
+- Begin with `<!--` and end with `-->`.  
+- Ignored by the browser; useful for leaving notes or explanations in the code.  
 - Example:
 
 ```html
-  <!-- This is a comment -->
-  <p>Visible content</p>
+<!-- This is a comment -->
+<p>Visible content</p>
 ```
 
 ### 2. Multi-line Comments
 
 - Can span across multiple lines.
 - Useful for sectioning or describing large blocks of HTML.
+- Example:
 
 ```html
-
+    <!--  
+      This is a
+      multi-line comment
+    -->
 ```
 
 ### 3. HTML Whitespace Behavior
