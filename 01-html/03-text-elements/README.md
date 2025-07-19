@@ -25,9 +25,9 @@ HTML text elements extend the functionality of block-level content by adding inl
 
 ---
 
-> 🧠 Pro Tip
->
-> _Prefer semantic tags like `<strong>` and `<em>` over purely stylistic tags (`<b>`, `<i>`) to improve document meaning and accessibility._
+## 💡 Pro Tip
+
+_Prefer semantic tags like `<strong>` and `<em>` over purely stylistic tags (`<b>`, `<i>`) to improve document meaning and accessibility._
 
 ---
 
