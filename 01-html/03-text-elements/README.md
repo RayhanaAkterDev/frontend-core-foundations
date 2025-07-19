@@ -14,13 +14,9 @@ HTML text elements extend the functionality of block-level content by adding inl
 ## Detailed Explanation of Core Elements
 
 - `<br>` - Inserts a line break, forcing text to continue on a new line without starting a new paragraph.
-
 - `<hr>` - Creates a thematic break or horizontal rule to separate content sections visually.
-
 - `<strong>` - Indicates important text with strong emphasis, often rendered bold by browsers.
-
 - `<em>` - Marks text with emphasis, typically rendered italicized.
-
 - `<strong><em>` - Combined strong and emphasized text for extra semantic weight.
 
 ---
