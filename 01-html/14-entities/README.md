@@ -62,7 +62,7 @@ In HTML, certain characters like `<`, `>`, and `&` are reserved for markup. If y
 
 ---
 
-## 🔗 Code Example Reference
+## 🧪 Code Example Reference
 
 → [Click here to view the full HTML entities example](./index.html)
 
