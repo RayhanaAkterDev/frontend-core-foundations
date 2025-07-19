@@ -1,27 +1,8 @@
-/* style.css - External CSS Example */
-body {
-    font-family: Arial, sans-serif;
-}
+/*
+    style.css - External CSS Example for Introduction to CSS
+*/
 
-p {
-    color: darkgreen;
-}
-
-header {
-    text-align: center;
-}
-
-header > h1 {
-    color: darkblue;
-}
-
-/* Style introduction paragraph */
-header .intro {
-    padding: 20px;
-    font-style: italic;
-    text-align: center;
-}
-
+/* External CSS Example section */
 .external-css-demo {
     margin: 20px;
     padding: 15px;
@@ -33,6 +14,7 @@ header .intro {
     color: crimson;
 }
 
+/* Footer styles */
 footer {
     margin-top: 60px;
     padding-top: 10px;

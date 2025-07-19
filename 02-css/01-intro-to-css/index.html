@@ -15,7 +15,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
             name="description"
             content="Template page demonstrating introduction to CSS concepts, including linking CSS files and basic styling techniques."
@@ -24,8 +24,13 @@
         <meta name="author" content="Rayhana Akter Sumaya" />
         <title>Introduction to CSS</title>
 
-        <!-- CSS links -->
-        <link rel="stylesheet" href="/reset.css" />
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+
+        <!-- Base CSS: Common layout, typography, and container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
         <link rel="stylesheet" href="style.css" />
 
         <!-- Internal CSS Example -->
@@ -37,7 +42,7 @@
                 background-color: #f0f8ff;
             }
             .internal-css-demo h2 {
-                color: orangered;
+                color: green;
             }
         </style>
     </head>
