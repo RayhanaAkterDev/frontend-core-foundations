@@ -1,0 +1,114 @@
+/* Highlight box for class selector */
+.highlight {
+    background-color: #d6eaf8;
+    border-left: 6px solid #2980b9;
+    padding: 12px 15px;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+/* ID selector paragraph */
+#unique-text {
+    background-color: #f9ebea;
+    border-left: 6px solid #c0392b;
+    padding: 12px 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: #922b21;
+    margin-bottom: 1em;
+}
+
+/* Group selector elements */
+h3,
+span {
+    color: #2874a6;
+}
+
+/* Parent container for descendant selector */
+.parent {
+    background-color: #fcf3cf;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
+
+/* List inside parent */
+.parent > ul > li {
+    color: #196f3d;
+    list-style-type: square;
+    padding-left: 10px;
+}
+
+/* Sibling selectors */
+h3 + p {
+    border-top: 1px dashed #7f8c8d;
+    padding-top: 0.7em;
+    margin-top: 0.7em;
+    color: #6c3483;
+}
+
+h3 ~ p {
+    font-style: italic;
+    color: #555;
+}
+
+/* Input focus and disabled styles (attribute selectors) */
+input[type='text'] {
+    width: 280px;
+    padding: 10px 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: block;
+    transition: border-color 0.3s ease;
+}
+
+input[type='text']:focus {
+    border-color: #2980b9;
+    outline: none;
+    background-color: #eaf2f8;
+}
+
+input[type='text'][disabled] {
+    background-color: #e0e0e0;
+    border-color: #999;
+    color: #777;
+    cursor: not-allowed;
+}
+
+/* List styling with pseudo-classes */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.25s ease;
+    margin-bottom: 8px;
+}
+
+ul li:hover {
+    background-color: #d6eaf8;
+    cursor: pointer;
+}
+
+ul li.active {
+    font-weight: bold;
+    background-color: #85c1e9;
+    color: #154360;
+}
+
+ul li:last-child {
+    border-bottom: 2px solid #2980b9;
+}
+
+/* Pseudo-element for first letter */
+p::first-letter {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #c0392b;
+    float: left;
+    line-height: 1;
+    padding-right: 8px;
+}

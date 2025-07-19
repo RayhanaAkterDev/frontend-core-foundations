@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Advanced CSS Syntax and Selectors Example"
+        />
+        <meta
+            name="keywords"
+            content="CSS, selectors, syntax, advanced, specificity, pseudo-classes"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Advanced CSS Syntax & Selectors</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <h1>Advanced CSS Syntax & Selectors</h1>
+        <p>
+            This demo covers foundational and advanced CSS selectors with
+            explanations of syntax and specificity.
+        </p>
+        <hr />
+
+        <section>
+            <h2>Basic Selectors</h2>
+            <p>
+                <!-- Element Selector -->This paragraph uses the
+                <code>element selector</code>.
+            </p>
+            <div class="highlight">
+                <!-- Class Selector -->This div uses the
+                <code>class selector</code>.
+            </div>
+            <p id="unique-text">
+                <!-- ID Selector -->This paragraph uses the
+                <code>ID selector</code>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Group Selector</h2>
+            <h3><!-- Group Selector -->This is an H3 element</h3>
+            <span>This is a span element</span>
+        </section>
+
+        <section>
+            <h2>Combinators & Descendant Selectors</h2>
+            <div class="parent">
+                <p>
+                    <!-- Descendant Selector -->Child paragraph inside a
+                    <code>descendant selector</code>.
+                </p>
+                <ul>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Sibling Selectors</h2>
+            <h3>Heading 3</h3>
+            <p>
+                <!-- Adjacent Sibling Selector -->This paragraph uses the
+                <code>adjacent sibling selector</code> (h3 + p).
+            </p>
+            <p>
+                <!-- General Sibling Selector -->This paragraph uses the
+                <code>general sibling selector</code> (h3 ~ p).
+            </p>
+        </section>
+
+        <section>
+            <h2>Attribute Selectors</h2>
+            <input type="text" placeholder="Hover or focus me" />
+            <input type="text" disabled placeholder="Disabled input" />
+        </section>
+
+        <section>
+            <h2>Pseudo-classes & Pseudo-elements</h2>
+            <ul>
+                <li>Hover over me</li>
+                <li class="active">Active list item</li>
+                <li>Last item</li>
+            </ul>
+            <p>
+                <!-- Pseudo-element ::first-letter -->This text has a
+                <code>first-letter</code> pseudo-element styled.
+            </p>
+        </section>
+
+        <section>
+            <h2>Inline, Internal, and External CSS</h2>
+            <p style="color: teal; font-weight: bold">
+                <!-- Inline CSS -->This paragraph uses inline CSS styling.
+            </p>
+        </section>
+    </body>
+</html>
