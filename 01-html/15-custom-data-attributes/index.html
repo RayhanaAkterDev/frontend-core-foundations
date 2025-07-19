@@ -1,0 +1,124 @@
+<!--
+    Topic: Custom Data Attributes
+    Purpose: Learn how to use HTML5 data-* attributes to store extra information on HTML elements and access them with JavaScript.
+    Features:
+        - Shows how to add custom data attributes in HTML
+        - Demonstrates accessing data attributes using JavaScript
+        - Explains usefulness for storing extra info without affecting markup
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-11
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Example demonstrating custom data attributes in HTML and how to access them with JavaScript."
+        />
+        <meta
+            name="keywords"
+            content="Custom Data Attributes, HTML5, data-attributes, JavaScript"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Custom Data Attributes</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            ul li {
+                cursor: pointer;
+                margin: 6px 0;
+                padding: 8px 12px;
+                background-color: #f2f2f2;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+            ul li:hover,
+            ul li:focus {
+                background-color: #d0ebff;
+                outline: none;
+            }
+
+            #info {
+                margin-top: 20px;
+                font-weight: bold;
+                color: #333;
+                padding: 10px;
+                border: 1px solid #ccc;
+                background-color: #f9f9f9;
+                width: fit-content;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Custom Data Attributes Example</h1>
+
+        <p>Hover or focus on the items to see data attributes in action:</p>
+
+        <section aria-label="Product List">
+            <ul>
+                <li tabindex="0" role="button" data-id="101" data-category="fruit" data-price="1.99">
+                    Apple
+                </li>
+                <li tabindex="0" role="button" data-id="102" data-category="fruit" data-price="2.49">
+                    Banana
+                </li>
+                <li tabindex="0" role="button" data-id="103" data-category="vegetable" data-price="0.99">
+                    Carrot
+                </li>
+            </ul>
+        </section>
+
+        <p>
+            You can see data attributes in the browser's developer tools
+            anytime. The info below updates only when JavaScript runs on hover or focus.
+        </p>
+
+        <div id="info" aria-live="polite"></div>
+
+        <script>
+            const items = document.querySelectorAll('li');
+            const infoDiv = document.getElementById('info');
+
+            function showData(item) {
+                const id = item.dataset.id || 'N/A';
+                const category = item.dataset.category || 'N/A';
+                const price = item.dataset.price || 'N/A';
+
+                infoDiv.textContent = `ID: ${id} | Category: ${category} | Price: $${price}`;
+            }
+
+            function clearData() {
+                infoDiv.textContent = '';
+            }
+
+            items.forEach((item) => {
+                item.addEventListener('mouseenter', () => showData(item));
+                item.addEventListener('mouseleave', clearData);
+
+                // Keyboard accessibility: show on focus
+                item.addEventListener('focus', () => showData(item));
+                item.addEventListener('blur', clearData);
+
+                // Show data on Enter key press
+                item.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        showData(item);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
