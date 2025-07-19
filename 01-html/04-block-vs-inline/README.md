@@ -36,11 +36,13 @@ Understanding this distinction is essential for controlling layout and flow in a
 
 ---
 
-> 🧠 **Pro Tip:** Use inline elements for formatting within text and block elements for structuring page sections or containers. Avoid placing block elements inside inline elements to maintain valid HTML.
+> 🧠 Pro Tip
+>
+> _Use inline elements for formatting within text and block elements for structuring page sections or containers. Avoid placing block elements inside inline elements to maintain valid HTML._
 
 ---
 
-## Code Example
+## 🧪 Code Example Reference
 
 - [Block vs Inline Elements Example (index.html)](index.html) — Demonstrates common block and inline elements with semantic structure and visual layout behaviors.
 
