@@ -27,9 +27,9 @@ HTML supports various media types to create rich web content. This includes imag
 
 ---
 
-> 🧠 Pro Tip
->
-> _Always provide descriptive `alt` text for images and `title` attributes for interactive or embedded elements to enhance accessibility._
+## 💡 Pro Tip
+
+_Always provide descriptive `alt` text for images and `title` attributes for interactive or embedded elements to enhance accessibility._
 
 ---
 
