@@ -22,14 +22,12 @@ Tables organize tabular data in rows and columns. Proper use of semantic HTML ta
 
 ---
 
-> 🧠 Pro Tip
->
-> Use semantic elements:
-> `<thead>`, `<tbody>`, `<caption>`
->
-> Always include `scope` attributes on `<th>` elements  
-> → Defines clear header-cell relationships  
-> → Improves screen reader navigation and table accessibility
+## 💡 Pro Tip
+
+1. Use semantic elements: `<thead>`, `<tbody>`, `<caption>`.
+2. Always include `scope` attributes on `<th>` elements.  
+   - Defines clear header-cell relationships.  
+   - Improves screen reader navigation and table accessibility.
 
 ---
 
