@@ -42,7 +42,7 @@ This topic covers the basics of creating HTML forms using semantic and accessibl
 
 ---
 
-> 🧠 **Pro Tip**
+> 🧠 Pro Tip
 >
 > 1. Always associate labels with inputs using `for` and `id`.  
 > 2. Group related inputs with `<fieldset>` and `<legend>`.  
@@ -51,7 +51,7 @@ This topic covers the basics of creating HTML forms using semantic and accessibl
 
 ---
 
-## Code Example Reference
+## 🧪 Code Example Reference
 
 - [Basic Form Example (index.html)](index.html) — Shows an accessible contact form with semantic markup and ARIA support.
 
