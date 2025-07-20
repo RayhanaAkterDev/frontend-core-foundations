@@ -49,12 +49,21 @@ frontend-core-foundations/
 │   ├── 02-html-text-elements/
 │   └── ... (13 more topic folders)
 ├── 02-css/
+│   ├── 01-intro-to-css/
+│   │   ├── index.html
+│   │   ├── style.css
+│   │   └── README.md
+│   ├── 02-box-model/
+│   ├── 03-box-sizing/
+│   └── ... (more CSS topic folders)
 ├── 03-responsive-design/
 ├── 04-git-and-github/
 ├── assets/
 │   └── images/
 ├── styles/
-│   └── reset.css
+│   ├── reset.css         # Normalize browser styles
+│   ├── base.css          # Base styles: typography, containers, layout structure
+│   ├── utility.css       # Utility/helper classes: .d-flex, .text-center, etc.
 └── README.md
 ```
 
