@@ -1,0 +1,195 @@
+/* ==================================================
+   File: utility.css
+   Purpose: Reusable single-purpose utility classes
+   Author: Rayhana Akter Sumaya
+   ================================================== */
+
+/* ========== Display Utilities ========== */
+.d-block {
+    display: block;
+}
+.d-inline {
+    display: inline;
+}
+.d-inline-block {
+    display: inline-block;
+}
+.d-flex {
+    display: flex;
+}
+.d-grid {
+    display: grid;
+}
+.d-none {
+    display: none;
+}
+
+/* ========== Text Alignment ========== */
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+/* ========== Flex Utilities ========== */
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-center {
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+
+/* ========== Flex Gap Utilities ========== */
+.gap-0 {
+    gap: 0;
+}
+.gap-1 {
+    gap: 0.5rem;
+}
+.gap-2 {
+    gap: 1rem;
+}
+.gap-3 {
+    gap: 1.5rem;
+}
+.gap-4 {
+    gap: 2rem;
+}
+
+/* ========== Grid Utilities ========== */
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-gap-1 {
+    gap: 0.5rem;
+}
+.grid-gap-2 {
+    gap: 1rem;
+}
+
+/* ========== Margin Utilities ========== */
+.m-0 {
+    margin: 0;
+}
+.mt-1 {
+    margin-top: 0.5rem;
+}
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+.ml-1 {
+    margin-left: 0.5rem;
+}
+.mr-1 {
+    margin-right: 0.5rem;
+}
+.mt-2 {
+    margin-top: 1rem;
+}
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+/* ========== Padding Utilities ========== */
+.p-0 {
+    padding: 0;
+}
+.pt-1 {
+    padding-top: 0.5rem;
+}
+.pb-1 {
+    padding-bottom: 0.5rem;
+}
+.pl-1 {
+    padding-left: 0.5rem;
+}
+.pr-1 {
+    padding-right: 0.5rem;
+}
+.pt-2 {
+    padding-top: 1rem;
+}
+.pb-2 {
+    padding-bottom: 1rem;
+}
+
+/* ========== Width & Height Utilities ========== */
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+.max-w-full {
+    max-width: 100%;
+}
+.max-h-full {
+    max-height: 100%;
+}
+
+/* ========== Text & Font Utilities ========== */
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-lowercase {
+    text-transform: lowercase;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+.fw-bold {
+    font-weight: bold;
+}
+.fw-normal {
+    font-weight: normal;
+}
+.fw-light {
+    font-weight: 300;
+}
+
+/* ========== Visibility Utilities ========== */
+.visible {
+    visibility: visible;
+}
+.invisible {
+    visibility: hidden;
+}
+
+/* ========== Overflow Utilities ========== */
+.overflow-hidden {
+    overflow: hidden;
+}
+.overflow-scroll {
+    overflow: scroll;
+}
+.overflow-auto {
+    overflow: auto;
+}
