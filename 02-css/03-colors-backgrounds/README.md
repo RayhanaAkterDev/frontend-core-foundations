@@ -1,17 +1,17 @@
-# CSS Colors and Backgrounds (including Gradients & Multiple Backgrounds)
+# 🎨 CSS Colors and Backgrounds (including Gradients & Multiple Backgrounds)
 
 > Tags: css-colors, gradients, multiple-backgrounds, rgba, hsl, background-image  
 > **Purpose:** Learn how to use CSS colors, gradients, and layered backgrounds to enhance visual styling.
 
 ---
 
-## 🌟 Overview
+## 📖 Overview
 
 This topic covers how to apply color to text and backgrounds using solid colors, gradients, and multiple layered backgrounds. You’ll learn about color formats, image backgrounds, and stacking techniques.
 
 ---
 
-## 🔍 Detailed Explanation of Core Elements
+## 🛠️ Detailed Explanation of Core Elements
 
 ### Text Color Formats
 
