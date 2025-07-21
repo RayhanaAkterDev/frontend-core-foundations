@@ -1,0 +1,92 @@
+<!--
+    Topic: CSS Cursor Visibility
+    Purpose: To demonstrate real-world cursor styles that enhance UX in professional web development.
+    Features:
+      - Common professional cursor types: pointer, text, grab, move, not-allowed, zoom-in
+      - Semantic HTML structure with accessible labels
+      - Interactive UI patterns like drag, disable, and zoom effect zones
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn how to use professional-level cursor styles in CSS for better interaction design."
+        />
+        <meta
+            name="keywords"
+            content="css, cursor, pointer, grab, zoom, UX, interaction"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Cursor Visibility</title>
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>CSS Cursor Visibility</h1>
+            <p>
+                This demo showcases cursor styles that are widely used by
+                professional developers to guide users during interactions and
+                improve UX across forms, buttons, and advanced components.
+            </p>
+
+            <!-- Section: Clickable Elements -->
+            <section>
+                <h2>1. Clickable Elements (Pointer)</h2>
+                <button class="cursor-pointer">Submit Form</button>
+                <a href="#" class="cursor-pointer">Visit Profile</a>
+            </section>
+
+            <!-- Section: Text Input -->
+            <section>
+                <h2>2. Text Fields (Text)</h2>
+                <label for="name">Your Name:</label>
+                <input
+                    id="name"
+                    type="text"
+                    class="cursor-text"
+                    placeholder="Type here..."
+                />
+            </section>
+
+            <!-- Section: Dragging Interaction -->
+            <section>
+                <h2>3. Draggable Handle (Grab)</h2>
+                <div class="cursor-grab" draggable="true">Drag this card</div>
+            </section>
+
+            <!-- Section: Movable UI Panel -->
+            <section>
+                <h2>4. Movable Panel (Move)</h2>
+                <div class="cursor-move">
+                    This box simulates a movable layout component
+                </div>
+            </section>
+
+            <!-- Section: Disabled State -->
+            <section>
+                <h2>5. Disabled Interaction (Not Allowed)</h2>
+                <button class="cursor-not-allowed" disabled>
+                    Action Not Available
+                </button>
+            </section>
+
+            <!-- Section: Zoom Interaction -->
+            <section>
+                <h2>6. Media Zoom Area (Zoom In)</h2>
+                <div class="cursor-zoom">Hover to Zoom Image</div>
+            </section>
+        </main>
+    </body>
+</html>

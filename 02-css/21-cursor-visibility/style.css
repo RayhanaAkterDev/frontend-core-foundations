@@ -1,0 +1,88 @@
+/* ========================================
+   CSS Cursor Visibility Styles
+   ----------------------------------------
+   Cursor Types: pointer, text, grab, move,
+                 not-allowed, zoom-in
+   Matches structure and order of index.html
+=========================================== */
+
+/* Section 1: Clickable Elements */
+.cursor-pointer {
+    cursor: pointer;
+    padding: 10px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin: 10px 10px 20px 0;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.cursor-pointer:hover {
+    background-color: #388e3c;
+}
+
+/* Section 2: Text Input */
+.cursor-text {
+    cursor: text;
+    padding: 10px;
+    width: 250px;
+    font-size: 1rem;
+    margin: 12px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Section 3: Draggable Area */
+.cursor-grab {
+    cursor: grab;
+    background-color: #ffc107;
+    padding: 14px 20px;
+    margin: 12px 0 20px 0;
+    border-radius: 6px;
+    width: fit-content;
+    font-weight: 500;
+    user-select: none;
+}
+
+/* Section 4: Movable Panel */
+.cursor-move {
+    cursor: move;
+    background-color: #03a9f4;
+    padding: 16px 20px;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.95rem;
+    margin: 12px 0 20px 0;
+    width: fit-content;
+}
+
+/* Section 5: Disabled Button */
+.cursor-not-allowed {
+    cursor: not-allowed;
+    padding: 10px 16px;
+    background-color: #e0e0e0;
+    color: #666;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin: 12px 0 20px 0;
+}
+
+/* Section 6: Zoom-In Media */
+.cursor-zoom {
+    cursor: zoom-in;
+    background-color: #f44336;
+    padding: 20px;
+    color: white;
+    border-radius: 6px;
+    width: fit-content;
+    font-size: 0.95rem;
+    margin: 12px 0 30px 0;
+    transition: background-color 0.2s ease;
+}
+
+.cursor-zoom:hover {
+    background-color: #d32f2f;
+}
