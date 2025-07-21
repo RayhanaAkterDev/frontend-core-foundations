@@ -1,0 +1,53 @@
+/* style.css - CSS Typography */
+
+/* Font Family Examples */
+.serif {
+    font-family: 'Georgia', serif;
+}
+
+.sans-serif {
+    font-family: 'Arial', sans-serif;
+}
+
+.monospace {
+    font-family: 'Courier New', monospace;
+}
+
+/* Font Size, Weight, Style */
+.small-text {
+    font-size: 14px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+/* Line Height and Spacing */
+.line-height-demo {
+    line-height: 2;
+}
+
+.letter-spacing-demo {
+    letter-spacing: 3px;
+}
+
+.word-spacing-demo {
+    word-spacing: 15px;
+}
+
+/* Text Alignment, Decoration, Transformation */
+.center-align {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
