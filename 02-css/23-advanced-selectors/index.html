@@ -1,0 +1,133 @@
+<!--
+    Topic: Advanced Selectors
+    Purpose: To demonstrate complex CSS selectors for precise targeting of elements.
+    Features:
+      - Attribute selectors
+      - Pseudo-classes (:nth-child, :not, :empty, :first-of-type)
+      - Pseudo-elements (::before, ::after)
+      - Combinators (descendant, child, adjacent sibling, general sibling)
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Learn advanced CSS selectors including attribute, pseudo-classes, pseudo-elements, and combinators."
+        />
+        <meta
+            name="keywords"
+            content="css, selectors, attribute selectors, pseudo-classes, combinators, advanced"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Advanced CSS Selectors</title>
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>Advanced CSS Selectors (Simple)</h1>
+            <p>
+                Learn some useful CSS selectors with easy examples you can use
+                in your projects.
+            </p>
+
+            <!-- Attribute Selectors -->
+            <section>
+                <h2>1. Attribute Selectors</h2>
+                <p>
+                    Style elements based on attributes, without adding classes.
+                </p>
+                <ul>
+                    <li>
+                        <code>[type="text"]</code>: Select all inputs with
+                        type="text".
+                    </li>
+                    <li>
+                        <code>[title^="Start"]</code>: Select elements whose
+                        title starts with "Start".
+                    </li>
+                    <li>
+                        <code>[class$="end"]</code>: Select elements whose class
+                        ends with "end".
+                    </li>
+                    <li>
+                        <code>[alt*="image"]</code>: Select elements whose alt
+                        attribute contains "image".
+                    </li>
+                </ul>
+                <input type="text" placeholder="Text input" />
+                <input type="password" placeholder="Password input" />
+                <img
+                    src="#"
+                    alt="sample image"
+                    title="Start here"
+                    class="btn-end"
+                />
+                <img
+                    src="#"
+                    alt="beautiful image"
+                    title="End now"
+                    class="btn-begin"
+                />
+            </section>
+
+            <!-- Pseudo-classes -->
+            <section>
+                <h2>2. Pseudo-classes</h2>
+                <p>Target elements based on position or state.</p>
+                <ul>
+                    <li>
+                        <code>:not(.skip)</code>: Select elements without class
+                        "skip".
+                    </li>
+                    <li>
+                        <code>:empty</code>: Select elements with no content.
+                    </li>
+                    <li>
+                        <code>:nth-child(2)</code>: Select the second child
+                        element.
+                    </li>
+                </ul>
+                <ul class="pseudo-list">
+                    <li>Item 1</li>
+                    <li class="skip">Item 2 (skipped)</li>
+                    <li></li>
+                    <li>Item 4</li>
+                </ul>
+            </section>
+
+            <!-- Pseudo-elements -->
+            <section>
+                <h2>3. Pseudo-elements</h2>
+                <p>
+                    Insert content before or after an element without changing
+                    HTML.
+                </p>
+                <p class="before-example">This text has content before it.</p>
+                <p class="after-example">This text has content after it.</p>
+            </section>
+
+            <!-- Combinators -->
+            <section>
+                <h2>4. Combinators</h2>
+                <p>Style elements based on their relationship in the HTML.</p>
+                <div class="parent">
+                    <p>Parent paragraph</p>
+                    <p class="child">Direct child paragraph</p>
+                    <p class="adjacent">Adjacent sibling paragraph</p>
+                    <p class="general-sibling">General sibling paragraph</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
