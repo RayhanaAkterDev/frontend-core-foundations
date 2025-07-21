@@ -1,0 +1,177 @@
+<!--
+    Topic: CSS Architecture & Methodologies
+    Purpose: Explain different CSS methodologies that help organize and scale styles in large projects.
+    Features:
+      - Clear explanation of BEM, SMACSS, OOCSS, Atomic CSS, and CSS-in-JS
+      - Focus on real-world usage and team collaboration
+      - Beginner-friendly structure with simple code examples
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Beginner-friendly explanation of popular CSS architecture and methodologies for scalable styling."
+        />
+        <meta
+            name="keywords"
+            content="css, architecture, bem, smacss, oocss, atomic css, css-in-js"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Architecture & Methodologies</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>CSS Architecture & Methodologies</h1>
+            <p>
+                CSS architecture is about organizing your styles in a clean and
+                scalable way. These methodologies are used in real projects to
+                avoid confusion, bugs, and class conflicts.
+            </p>
+
+            <!-- 🔹 BEM -->
+            <section>
+                <h2>1. BEM (Block Element Modifier)</h2>
+                <p>
+                    BEM is a class naming system to make your CSS readable and
+                    reusable.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Block:</strong> Main component (e.g.,
+                        <code>card</code>)
+                    </li>
+                    <li>
+                        <strong>Element:</strong> Part of the block (e.g.,
+                        <code>card__title</code>)
+                    </li>
+                    <li>
+                        <strong>Modifier:</strong> State or variation (e.g.,
+                        <code>card__title--active</code>)
+                    </li>
+                </ul>
+
+                <h3>Example:</h3>
+                <pre><code>&lt;div class="card"&gt;
+  &lt;h2 class="card__title card__title--active"&gt;Blog Post&lt;/h2&gt;
+  &lt;p class="card__description"&gt;BEM keeps your CSS organized.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+            </section>
+
+            <!-- 🔹 SMACSS -->
+            <section>
+                <h2>2. SMACSS (Scalable and Modular Architecture for CSS)</h2>
+                <p>
+                    SMACSS groups styles by their purpose. It helps teams write
+                    organized and scalable CSS.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Base:</strong> Reset, typography, default styles
+                    </li>
+                    <li>
+                        <strong>Layout:</strong> Main sections like header,
+                        footer
+                    </li>
+                    <li>
+                        <strong>Module:</strong> Reusable parts like buttons or
+                        cards
+                    </li>
+                    <li>
+                        <strong>State:</strong> Temporary changes like
+                        <code>.is-hidden</code>
+                    </li>
+                    <li>
+                        <strong>Theme:</strong> Styling variations like
+                        light/dark
+                    </li>
+                </ul>
+
+                <h3>Example:</h3>
+                <pre><code>&lt;button class="btn is-active"&gt;Click Me&lt;/button&gt;</code></pre>
+            </section>
+
+            <!-- 🔹 OOCSS -->
+            <section>
+                <h2>3. OOCSS (Object-Oriented CSS)</h2>
+                <p>
+                    OOCSS treats styles like objects to reuse layout patterns
+                    easily.
+                </p>
+                <ul>
+                    <li>Split structure and visual styles</li>
+                    <li>Separate content from container</li>
+                    <li>Helps reduce code duplication</li>
+                </ul>
+
+                <h3>Example:</h3>
+                <pre><code>&lt;div class="media"&gt;
+  &lt;img src="avatar.jpg" class="media__img" /&gt;
+  &lt;div class="media__body"&gt;
+    &lt;p&gt;This is an object-style reusable layout.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            </section>
+
+            <!-- 🔹 Atomic CSS -->
+            <section>
+                <h2>4. Atomic CSS</h2>
+                <p>
+                    Atomic CSS uses utility classes to apply styles directly in
+                    HTML.
+                </p>
+                <ul>
+                    <li>
+                        Each class does one thing (e.g.,
+                        <code>.text-center</code>)
+                    </li>
+                    <li>Fast to write and lightweight</li>
+                    <li>Popular in frameworks like Tailwind CSS</li>
+                </ul>
+
+                <h3>Example:</h3>
+                <pre><code>&lt;div class="bg-blue-500 text-white p-4 rounded"&gt;
+  Utility-first styling using Atomic CSS
+&lt;/div&gt;
+</code></pre>
+            </section>
+
+            <!-- 🔹 CSS-in-JS -->
+            <section>
+                <h2>5. CSS-in-JS</h2>
+                <p>
+                    In component-based libraries like React, CSS can be written
+                    inside JS files using libraries like styled-components.
+                </p>
+                <ul>
+                    <li>Styles are scoped to components</li>
+                    <li>Supports dynamic styling with JS logic</li>
+                    <li>Common in modern frontend development</li>
+                </ul>
+
+                <h3>Example:</h3>
+                <pre><code>// React + styled-components
+const Button = styled.button`
+  background: teal;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+`;
+</code></pre>
+            </section>
+        </main>
+    </body>
+</html>
