@@ -1,0 +1,58 @@
+<!--
+    Topic: Box Sizing
+    Purpose: To demonstrate how the box-sizing property changes the box model calculation for element dimensions.
+    Features:
+      - Compare content-box (default) vs border-box behavior
+      - Show how width is interpreted differently with padding and border
+      - Visual layout for debugging common sizing issues
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Explore how box-sizing affects layout and width calculation in CSS"
+        />
+        <meta
+            name="keywords"
+            content="CSS, Box Sizing, content-box, border-box, layout"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Box Sizing</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Utility CSS: Reusable helper classes -->
+        <link rel="stylesheet" href="../../styles/utility.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>CSS Box Sizing</h1>
+            <p>
+                Learn how the <code>box-sizing</code> property changes how CSS
+                calculates width and height.
+            </p>
+        </header>
+
+        <main>
+            <!-- content-box vs border-box demo -->
+            <section>
+                <h2>Content-Box vs Border-Box</h2>
+                <div class="d-flex gap-4 justify-center align-center">
+                    <div class="sizing-box content-box">content-box</div>
+                    <div class="sizing-box border-box">border-box</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
