@@ -1,0 +1,128 @@
+<!--
+    Topic: Preprocessors Introduction (Sass, LESS)
+    Purpose: Introduce CSS preprocessors like Sass and LESS, explaining their benefits and basic syntax with examples.
+    Features:
+      - Variables, nesting, and mixins
+      - Code reusability and cleaner structure
+      - Overview of Sass (.scss) and LESS syntax
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Introduction to CSS preprocessors Sass and LESS with syntax and benefits."
+        />
+        <meta
+            name="keywords"
+            content="css, sass, less, preprocessors, variables, nesting, mixins"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Preprocessors Introduction</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>Introduction to CSS Preprocessors: Sass & LESS</h1>
+            <p>
+                CSS preprocessors extend the capabilities of plain CSS by adding
+                features like variables, nesting, mixins, and functions. Two
+                popular preprocessors are <strong>Sass</strong> and
+                <strong>LESS</strong>.
+            </p>
+
+            <!-- Sass Section -->
+            <section>
+                <h2>What is Sass?</h2>
+                <p>
+                    Sass (Syntactically Awesome Stylesheets) uses the
+                    <code>.scss</code> or <code>.sass</code> file extension and
+                    compiles into regular CSS. It’s widely used and offers
+                    powerful features.
+                </p>
+
+                <h3>Sass Features:</h3>
+                <ul>
+                    <li>
+                        <strong>Variables:</strong> Store values like colors or
+                        sizes.
+                    </li>
+                    <li>
+                        <strong>Nesting:</strong> Organize styles inside
+                        selectors.
+                    </li>
+                    <li><strong>Mixins:</strong> Reuse chunks of CSS code.</li>
+                    <li>
+                        <strong>Partials & Imports:</strong> Split styles into
+                        manageable files.
+                    </li>
+                </ul>
+
+                <h3>Example (SCSS syntax):</h3>
+                <pre><code>$primary-color: #3498db;
+
+nav {
+  background: $primary-color;
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+</code></pre>
+            </section>
+
+            <!-- LESS Section -->
+            <section>
+                <h2>What is LESS?</h2>
+                <p>
+                    LESS is another preprocessor that uses the
+                    <code>.less</code> extension. It is similar to Sass and also
+                    compiles into CSS.
+                </p>
+
+                <h3>LESS Features:</h3>
+                <ul>
+                    <li>
+                        <strong>Variables:</strong> Declared using
+                        <code>@</code> symbol.
+                    </li>
+                    <li><strong>Nesting:</strong> Just like Sass.</li>
+                    <li><strong>Mixins:</strong> Declare reusable rules.</li>
+                    <li>
+                        <strong>Operations:</strong> Do math inside stylesheets.
+                    </li>
+                </ul>
+
+                <h3>Example (LESS syntax):</h3>
+                <pre><code>@main-color: #27ae60;
+
+header {
+  background: @main-color;
+  nav {
+    a {
+      color: white;
+      padding: 10px;
+    }
+  }
+}
+</code></pre>
+            </section>
+        </main>
+    </body>
+</html>
