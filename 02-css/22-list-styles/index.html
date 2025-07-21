@@ -1,0 +1,113 @@
+<!--
+    Topic: List Styles
+    Purpose: To demonstrate how to customize ordered and unordered list styles using CSS.
+    Features:
+      - Use of list-style-type for bullets and numbers
+      - list-style-position and list-style shorthand
+      - Custom bullet symbols and removal of default styles
+      - Demonstration of list-style-position: inside vs outside
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn to style HTML lists with bullets, numbers, positions, and custom markers using CSS."
+        />
+        <meta
+            name="keywords"
+            content="css, list, ul, ol, list-style-type, list-style-position"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS List Styles</title>
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>CSS List Styles</h1>
+            <p>
+                This demo shows how to customize the appearance of HTML lists
+                using CSS properties like
+                <code>list-style-type</code>, <code>list-style-position</code>,
+                and <code>list-style</code>.
+            </p>
+
+            <!-- Section: Unordered List Types -->
+            <section>
+                <h2>1. Unordered List Types</h2>
+                <ul class="list-disc">
+                    <li>Default disc</li>
+                </ul>
+                <ul class="list-circle">
+                    <li>Circle bullet</li>
+                </ul>
+                <ul class="list-square">
+                    <li>Square bullet</li>
+                </ul>
+            </section>
+
+            <!-- Section: Ordered List Types -->
+            <section>
+                <h2>2. Ordered List Types</h2>
+                <ol class="list-decimal">
+                    <li>Decimal format</li>
+                </ol>
+                <ol class="list-upper-roman">
+                    <li>Upper Roman format</li>
+                </ol>
+                <ol class="list-lower-alpha">
+                    <li>Lower Alpha format</li>
+                </ol>
+            </section>
+
+            <!-- Section: Custom Marker & Position -->
+            <section>
+                <h2>3. Custom Marker and Position</h2>
+                <ul class="list-inside">
+                    <li>Bullet inside the content box</li>
+                </ul>
+                <ul class="list-none">
+                    <li>List with no marker</li>
+                </ul>
+            </section>
+
+            <!-- New Section: list-style-position inside vs outside -->
+            <section>
+                <h2>4. list-style-position: outside (default)</h2>
+                <ul class="outside">
+                    <li>
+                        This is a long list item that wraps onto multiple lines
+                        to show the bullet outside the text block.
+                    </li>
+                    <li>
+                        Another long list item demonstrating default bullet
+                        positioning.
+                    </li>
+                </ul>
+
+                <h2>list-style-position: inside</h2>
+                <ul class="inside">
+                    <li>
+                        This is a long list item that wraps onto multiple lines
+                        to show the bullet inside the text block.
+                    </li>
+                    <li>
+                        Another long list item demonstrating the inside bullet
+                        position.
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
