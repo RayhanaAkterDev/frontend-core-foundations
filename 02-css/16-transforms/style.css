@@ -1,0 +1,49 @@
+/* style.css
+   CSS Transforms Styles
+*/
+
+/* Base box style */
+.transform-box {
+    width: 180px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #4caf50;
+    color: white;
+    font-weight: 700;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+/* Translate example */
+.translate-example:hover,
+.translate-example:focus {
+    transform: translate(50px, 20px);
+}
+
+/* Rotate example */
+.rotate-example:hover,
+.rotate-example:focus {
+    transform: rotate(30deg);
+}
+
+/* Scale example */
+.scale-example:hover,
+.scale-example:focus {
+    transform: scale(1.5);
+}
+
+/* Skew example */
+.skew-example:hover,
+.skew-example:focus {
+    transform: skew(20deg, 10deg);
+}
+
+/* Combined transforms example */
+.combined-example:hover,
+.combined-example:focus {
+    transform: translate(30px, 10px) rotate(20deg) scale(1.3);
+}
