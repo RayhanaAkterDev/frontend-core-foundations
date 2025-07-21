@@ -1,0 +1,43 @@
+/* style.css
+   Float & Clear demonstration styles
+   Shows how float affects layout and how clear resolves flow issues
+*/
+
+/* Float box style */
+.float-box {
+    width: 120px;
+    height: 80px;
+    background-color: #b8d8ff;
+    border: 2px solid #005f99;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Float directions */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* Text block that follows floated elements */
+.text-block {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+/* Clearfix utility to clear floated elements */
+/*
+    Without this, following content may wrap around floated elements,
+    causing layout issues.
+    Try commenting out this rule to see the effect.
+*/
+.clearfix {
+    clear: both;
+}

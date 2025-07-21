@@ -1,0 +1,77 @@
+<!--
+    Topic: CSS Float & Clear
+    Purpose: To demonstrate how elements can be floated to the left or right, and how clearing is used to control layout flow after floated elements.
+    Features:
+      - float: left and float: right usage
+      - Common layout issues caused by float
+      - Using clear to reset flow
+      - Simple float-based layout patterns
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="CSS float and clear concepts with layout flow examples"
+        />
+        <meta
+            name="keywords"
+            content="CSS, float, clear, layout flow, positioning"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Float & Clear</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <!-- Page title and description -->
+            <h1>CSS Float & Clear</h1>
+            <p>
+                The <code>float</code> property allows elements to be taken out
+                of the normal document flow and positioned to the left or right.
+                The <code>clear</code> property helps prevent layout breaking by
+                pushing elements below floated content.
+            </p>
+
+            <!-- Float left and float right demo -->
+            <section>
+                <h2>Float Left and Right</h2>
+                <div class="float-box float-left">Float Left</div>
+                <div class="float-box float-right">Float Right</div>
+                <p class="text-block">
+                    This paragraph follows the floated boxes. Without clear, it
+                    may wrap around floated content. Float can be useful for
+                    aligning elements, but it often requires proper clearing to
+                    avoid layout issues.
+                </p>
+            </section>
+
+            <!-- Clearfix technique -->
+            <section>
+                <h2>Using Clear to Reset Flow</h2>
+                <div class="clearfix-container">
+                    <div class="float-box float-left">Left Box</div>
+                    <div class="float-box float-right">Right Box</div>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="text-block">
+                    The <code>clearfix</code> element forces this paragraph to
+                    appear below both floated boxes instead of wrapping around
+                    them.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
