@@ -1,0 +1,188 @@
+/*
+  style.css
+  Advanced CSS Transitions & Animations Styles
+*/
+
+/* Multi-property transition */
+/* Demonstrates transitioning background-color, transform, and box-shadow with different timing and easing */
+.multi-transition-box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #2196f3;
+    color: white;
+    font-weight: 600;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* Multiple transitions:
+     - background-color changes in 0.4s ease-in-out
+     - transform scales in 0.6s cubic-bezier(0.4, 0, 0.2, 1)
+     - box-shadow changes in 0.3s ease-out with 0.1s delay
+  */
+    transition-property: background-color, transform, box-shadow;
+    transition-duration: 0.4s, 0.6s, 0.3s;
+    transition-timing-function: ease-in-out, cubic-bezier(0.4, 0, 0.2, 1),
+        ease-out;
+    transition-delay: 0s, 0s, 0.1s;
+}
+
+.multi-transition-box:hover,
+.multi-transition-box:focus {
+    background-color: #1976d2;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(25, 118, 210, 0.6);
+    outline: none;
+}
+
+/* Chained transitions using delays */
+/* Uses sequential transitions for background-color, border-radius, and transform */
+.chained-transition-box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #ff7043;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* Transition all properties but with staggered delays for a chaining effect */
+    transition: background-color 0.3s ease 0s, border-radius 0.5s ease 0.3s,
+        transform 0.4s ease 0.8s;
+}
+
+.chained-transition-box:hover,
+.chained-transition-box:focus {
+    background-color: #e64a19;
+    border-radius: 50px;
+    transform: rotate(5deg);
+    outline: none;
+}
+
+/* Keyframe animation with fill-mode and direction */
+/* Animation moves box horizontally and changes background, runs forwards and backwards */
+@keyframes slideFade {
+    0% {
+        transform: translateX(0);
+        background-color: #6a1b9a;
+    }
+    50% {
+        transform: translateX(150px);
+        background-color: #ab47bc;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: #6a1b9a;
+    }
+}
+
+.keyframe-animation-box {
+    width: 180px;
+    height: 100px;
+    margin: 20px auto;
+    color: white;
+    font-weight: 600;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    animation-name: slideFade;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; /* Retain end state after each iteration */
+}
+
+/* Simulated animation play state toggle */
+/* Animation pauses on hover or focus using animation-play-state */
+@keyframes pulseGlow {
+    0%,
+    100% {
+        box-shadow: 0 0 10px 2px rgba(33, 150, 243, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 20px 5px rgba(33, 150, 243, 1);
+    }
+}
+
+.play-state-animation-box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #2196f3;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: pulseGlow 2.5s ease-in-out infinite;
+    outline-offset: 4px;
+    outline-color: transparent;
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+/* Pause animation on hover or focus */
+.play-state-animation-box:hover,
+.play-state-animation-box:focus {
+    animation-play-state: paused;
+    outline-color: #64b5f6;
+    outline-style: dotted;
+    outline-width: 3px;
+    outline-offset: 6px;
+    outline-radius: 15px;
+    outline-offset: 6px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1976d2;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1976d2;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1976d2;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1976d2;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1976d2;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1976d2;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1976d2;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1976d2;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1976d2;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1976d2;
+    outline-offset: 4px;
+}
+
+/* Accessibility */
+/* Use tabindex="0" on divs to allow keyboard focus and :focus styles */
+/* Visible outlines on focus to meet accessibility standards */
