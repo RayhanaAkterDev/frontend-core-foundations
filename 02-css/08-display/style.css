@@ -1,0 +1,66 @@
+/* style.css - CSS Display Property */
+
+/* Block vs Inline */
+.block-example {
+    display: block;
+    background-color: #d1e7dd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inline-example {
+    display: inline;
+    background-color: #fde2e4;
+    padding: 5px;
+}
+
+/* Inline-block elements */
+.inline-block-example {
+    display: inline-block;
+    background-color: #fcefb4;
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid #ccc;
+}
+
+/* Display none and visibility hidden */
+.none-example {
+    display: none;
+}
+
+.hidden-example {
+    visibility: hidden;
+}
+
+/* Flexbox (intro) */
+.flex-container {
+    display: flex;
+    gap: 10px;
+    background-color: #cfe2ff;
+    padding: 10px;
+}
+
+.flex-container > div {
+    background-color: #e0f7fa;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Grid (intro) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #fff3cd;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: #f8d7da;
+    padding: 10px;
+    text-align: center;
+}

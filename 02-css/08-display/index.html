@@ -1,0 +1,94 @@
+<!--
+    Topic: CSS Display Property
+    Purpose: To control how elements are displayed in the document layout.
+    Features:
+    - Understand default display values: block, inline, inline-block
+    - Apply and compare display types
+    - Explore display: none and visibility: hidden
+    - Learn about display: flex and display: grid (introductory)
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn how to control element layout using CSS display property."
+        />
+        <meta
+            name="keywords"
+            content="CSS, display, block, inline, layout, flex, grid"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Display Property</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>CSS Display Property</h1>
+            <p>
+                Control how elements appear and behave in the layout using the
+                <code>display</code> property.
+            </p>
+        </header>
+
+        <main>
+            <!-- Block vs Inline -->
+            <section>
+                <h2>Block vs Inline</h2>
+                <div class="block-example">This is a block element</div>
+                <span class="inline-example">This is an inline element</span>
+            </section>
+
+            <!-- Inline-Block -->
+            <section>
+                <h2>Inline-Block</h2>
+                <div class="inline-block-example">Item 1</div>
+                <div class="inline-block-example">Item 2</div>
+                <div class="inline-block-example">Item 3</div>
+            </section>
+
+            <!-- Display None and Visibility Hidden -->
+            <section>
+                <h2>Display None & Visibility Hidden</h2>
+                <p class="none-example">You won't see this. (display: none)</p>
+                <p class="hidden-example">
+                    This is hidden but takes space. (visibility: hidden)
+                </p>
+            </section>
+
+            <!-- Display Flex (Intro) -->
+            <section>
+                <h2>Display Flex</h2>
+                <div class="flex-container">
+                    <div>Flex 1</div>
+                    <div>Flex 2</div>
+                    <div>Flex 3</div>
+                </div>
+            </section>
+
+            <!-- Display Grid (Intro) -->
+            <section>
+                <h2>Display Grid</h2>
+                <div class="grid-container">
+                    <div>Grid 1</div>
+                    <div>Grid 2</div>
+                    <div>Grid 3</div>
+                    <div>Grid 4</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
