@@ -1,0 +1,101 @@
+/* style.css
+   Topic: CSS Pseudo-classes & Pseudo-elements
+   Demonstrates use of hover, focus, child targeting, ::before, ::after, and combined selectors
+*/
+
+/* 🔹 Hover and Focus: Button interaction styles */
+.pseudo-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pseudo-button:hover,
+.pseudo-button:focus {
+    background-color: #0d47a1;
+    transform: scale(1.05);
+}
+
+/* 🔹 List styling with child selectors */
+.pseudo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.pseudo-list li {
+    padding: 10px;
+    margin-bottom: 6px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* First and last child */
+.pseudo-list li:first-child {
+    background-color: #c8e6c9;
+}
+
+.pseudo-list li:last-child {
+    background-color: #ffe082;
+}
+
+/* 🔹 Pseudo-elements: quote marks */
+.pseudo-quote {
+    position: relative;
+    padding: 20px 30px;
+    margin: 20px 0;
+    background-color: #f3e5f5;
+    font-style: italic;
+    font-weight: 500;
+    border-left: 4px solid #9c27b0;
+}
+
+.pseudo-quote::before {
+    content: '“';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 2rem;
+    color: #7b1fa2;
+}
+
+.pseudo-quote::after {
+    content: '”';
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    font-size: 2rem;
+    color: #7b1fa2;
+}
+
+/* 🔹 Combined: Hover with animated underline */
+.pseudo-link {
+    position: relative;
+    text-decoration: none;
+    color: #512da8;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+
+.pseudo-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #b39ddb;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.pseudo-link:hover::after {
+    transform: scaleX(1);
+}

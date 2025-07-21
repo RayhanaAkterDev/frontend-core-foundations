@@ -1,0 +1,76 @@
+<!--
+    Topic: CSS Pseudo-classes & Pseudo-elements
+    Purpose: Demonstrate how to use CSS pseudo-classes and pseudo-elements
+             to style elements based on interaction and structure.
+    Features:
+      - :hover, :focus, :first-child, :last-child, :nth-child
+      - ::before, ::after
+      - Clean layout and visual feedback
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Examples of CSS pseudo-classes and pseudo-elements"
+        />
+        <meta
+            name="keywords"
+            content="CSS, pseudo-classes, pseudo-elements, hover, before, after"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Pseudo-classes & Pseudo-elements</title>
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>CSS Pseudo-classes & Pseudo-elements</h1>
+            <p>
+                This demo shows how to style HTML elements using CSS
+                pseudo-classes and pseudo-elements.
+            </p>
+
+            <!-- 🔹 Pseudo-class: :hover and :focus -->
+            <section>
+                <h2>Hover and Focus</h2>
+                <button class="pseudo-button" tabindex="0">
+                    Hover or Focus Me
+                </button>
+            </section>
+
+            <!-- 🔹 Pseudo-classes: :first-child, :last-child -->
+            <section>
+                <h2>Child Selectors</h2>
+                <ul class="pseudo-list">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ul>
+            </section>
+
+            <!-- 🔹 Pseudo-elements: ::before and ::after -->
+            <section>
+                <h2>Before and After</h2>
+                <p class="pseudo-quote">CSS enhances your web experience.</p>
+            </section>
+
+            <!-- 🔹 Combined: :hover with ::after -->
+            <section>
+                <h2>Hover Underline Effect</h2>
+                <a href="#" class="pseudo-link">Hover over this link</a>
+            </section>
+        </main>
+    </body>
+</html>
