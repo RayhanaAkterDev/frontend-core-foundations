@@ -1,34 +1,37 @@
-/* style.css for Box Model topic */
+/* ===== Box Model Demo Styles ===== */
 
-.container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 10px;
+.box-model-example {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #0077cc;
+    margin: 30px;
+    background-color: #e6f2ff;
+    color: #003366;
+    font-weight: bold;
     text-align: center;
-    font-family: Arial, sans-serif;
-    color: #333;
 }
 
 .box {
-    width: 200px;
-    padding: 20px;
-    border: 5px solid;
-    margin: 30px auto;
-    background-color: #e0f0ff;
-    color: #003366;
-    box-sizing: content-box; /* default */
-    line-height: 1.5;
+    width: 300px;
+    height: 200px;
+    background-color: #f9dede;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
 }
 
-/* content-box example with blue border */
-.content-box-demo {
-    border-color: #007acc;
-    background-color: #d0e7ff;
+/* Box A with padding, border, and margin */
+.box-a {
+    padding: 15px;
+    border: 4px solid #cc0000;
+    margin: 20px;
+    background-color: #ffeaea;
 }
 
-/* border-box example with orange border */
-.border-box-demo {
-    border-color: #ff6600;
-    background-color: #ffe6cc;
-    box-sizing: border-box;
+/* Box B with no spacing */
+.box-b {
+    padding: 0;
+    border: none;
+    margin: 0;
+    background-color: #fdd;
 }
