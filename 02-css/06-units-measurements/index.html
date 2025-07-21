@@ -1,0 +1,66 @@
+<!--
+    Topic: CSS Units & Measurement
+    Purpose: To demonstrate the different types of CSS measurement units, including absolute and relative units, and how they affect layout and responsiveness.
+    Features:
+    - Use of absolute units (px, in, cm)
+    - Use of relative units (em, rem, %, vw, vh)
+    - Side-by-side comparison for visual understanding
+    - Practical layout examples using mixed units
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn about CSS units and measurements, including absolute and relative units, with examples."
+        />
+        <meta
+            name="keywords"
+            content="CSS, units, measurement, px, em, rem, percentage, vw, vh"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Units & Measurement</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>CSS Units & Measurement</h1>
+            <p>
+                This page demonstrates how different CSS units behave and affect
+                layout, font sizing, and responsiveness.
+            </p>
+        </header>
+
+        <main class="units-demo">
+            <!-- Absolute Units -->
+            <section>
+                <h2>Absolute Units</h2>
+                <div class="box px">100px Box</div>
+                <div class="box in">1in Box</div>
+                <div class="box cm">2cm Box</div>
+            </section>
+
+            <!-- Relative Units -->
+            <section>
+                <h2>Relative Units</h2>
+                <div class="box em">2em Box</div>
+                <div class="box rem">2rem Box</div>
+                <div class="box percent">50% Width Box</div>
+                <div class="box vw">20vw Box</div>
+                <div class="box vh">20vh Box</div>
+            </section>
+        </main>
+    </body>
+</html>
