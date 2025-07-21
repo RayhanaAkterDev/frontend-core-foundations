@@ -1,0 +1,113 @@
+/* style.css
+   Advanced CSS Variables (Custom Properties) demonstration styles
+*/
+
+/* Base box styling */
+.box {
+    margin: 16px auto;
+    padding: var(--padding, 20px);
+    border-radius: 12px;
+    color: var(--text-color, #fff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: var(--box-shadow, 0 2px 8px rgba(0, 0, 0, 0.15));
+    background-color: var(--bg-color, #333);
+    transition: background-color 0.4s ease, color 0.4s ease, padding 0.3s ease;
+}
+
+/* Complex fallback chain variables */
+.fallback-chain {
+    --var2: #2980b9;
+    --var3: #27ae60;
+    /* var1 is not defined to test fallback chain */
+    padding: 24px;
+    background-color: var(--var1, var(--var2, var(--var3, #8e44ad)));
+    color: #fff;
+}
+
+/* Responsive variables with media queries */
+:root {
+    --padding: 20px;
+    --bg-color: #34495e;
+    --text-color: #ecf0f1;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    :root {
+        --padding: 12px;
+        --bg-color: #2c3e50;
+    }
+}
+
+.responsive-vars {
+    padding: var(--padding);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+}
+
+/* Conditional variable usage with @supports */
+@supports (--css: variables) {
+    .supports-vars {
+        --primary: #e67e22;
+        background-color: var(--primary);
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--primary);
+    }
+}
+
+/* Variables inside gradients and shadows */
+.multi-value {
+    --grad-start: #ff6b6b;
+    --grad-end: #f06595;
+    --shadow-color: rgba(240, 101, 149, 0.6);
+
+    background-image: linear-gradient(
+        135deg,
+        var(--grad-start),
+        var(--grad-end)
+    );
+    box-shadow: 0 8px 15px var(--shadow-color);
+    color: #fff;
+    padding: 24px;
+}
+
+/* Animating CSS variables */
+/* Keyframes animate the --bg-color variable indirectly via background */
+@keyframes animateBg {
+    0%,
+    100% {
+        --bg-color: #1abc9c;
+    }
+    50% {
+        --bg-color: #16a085;
+    }
+}
+
+.animated-vars {
+    animation: animateBg 4s ease-in-out infinite;
+    background-color: var(--bg-color);
+    padding: 24px;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+}
+
+/* Using environment variables for safe-area-inset */
+.env-vars {
+    padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px)
+        env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
+    background-color: #34495e;
+    color: #ecf0f1;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 380px;
+    margin: 20px auto;
+}

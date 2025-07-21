@@ -1,0 +1,101 @@
+<!--
+    Topic: CSS Variables (Custom Properties) - Advanced
+    Purpose: Deep dive into advanced CSS variables techniques including complex fallback chains,
+             responsive variables, conditional usage, and dynamic runtime updates.
+    Features:
+      - Complex fallback chains with var()
+      - Responsive custom properties with media queries
+      - Conditional variable usage via @supports
+      - Using variables in multi-value properties (gradients, shadows)
+      - Animating CSS variables
+      - Interaction with environment variables (env())
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Advanced CSS Variables (Custom Properties) usage and techniques"
+        />
+        <meta
+            name="keywords"
+            content="CSS, variables, custom-properties, advanced, fallback, responsive, animation"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Advanced CSS Variables (Custom Properties)</title>
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Advanced CSS Variables (Custom Properties)</h1>
+            <p>
+                This example explores advanced usage of CSS variables including
+                complex fallback chains, responsive and conditional variables,
+                multi-value usage, and CSS variable animations.
+            </p>
+
+            <!-- Complex fallback chain -->
+            <section>
+                <h2>Complex Fallback Chains</h2>
+                <div class="box fallback-chain">
+                    This box uses a complex fallback chain:<br />
+                    <code>var(--var1, var(--var2, var(--var3, #8e44ad)))</code>
+                </div>
+            </section>
+
+            <!-- Responsive variables with media queries -->
+            <section>
+                <h2>Responsive Custom Properties</h2>
+                <div class="box responsive-vars">
+                    This box's padding and color respond to viewport size using
+                    variables.
+                </div>
+            </section>
+
+            <!-- Conditional variable usage with @supports -->
+            <section>
+                <h2>Conditional Variables with @supports</h2>
+                <div class="box supports-vars">
+                    This box changes style if
+                    <code>color: var(--primary)</code> is supported.
+                </div>
+            </section>
+
+            <!-- Multi-value properties using variables -->
+            <section>
+                <h2>Variables in Multi-Value Properties</h2>
+                <div class="box multi-value">
+                    This box uses variables inside gradients and shadows.
+                </div>
+            </section>
+
+            <!-- Animating CSS variables -->
+            <section>
+                <h2>Animating CSS Variables</h2>
+                <div class="box animated-vars">
+                    This box animates its background color using CSS variables.
+                </div>
+            </section>
+
+            <!-- Environment variables (env()) -->
+            <section>
+                <h2>Using Environment Variables (env())</h2>
+                <div class="box env-vars">
+                    This box uses the safe-area-inset environment variable for
+                    padding.
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
