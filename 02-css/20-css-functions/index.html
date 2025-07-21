@@ -1,0 +1,91 @@
+<!--
+    Topic: CSS Functions
+    Purpose: To demonstrate advanced CSS functions and how they manipulate values, colors, selectors, and geometry.
+    Features:
+    - Demonstrates value manipulation using calc(), clamp(), min(), max()
+    - Uses color functions like rgb(), hsl(), and color-mix()
+    - Applies transform() with translate(), rotate(), scale()
+    - Showcases url(), attr(), and var() functions in styling
+    - Demonstrates trigonometric functions in rotate/translate (where supported)
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Advanced CSS Functions demonstration including calc, clamp, color, transform, and more."
+        />
+        <meta
+            name="keywords"
+            content="css, advanced, functions, calc, clamp, transform, color, attr, var"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Advanced CSS Functions</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>🎯 Advanced CSS Functions</h1>
+            <p>
+                This page demonstrates powerful CSS functions such as
+                <code>calc()</code>, <code>clamp()</code>,
+                <code>color-mix()</code>, <code>attr()</code>, and
+                <code>transform()</code> that allow for dynamic, responsive, and
+                expressive styling.
+            </p>
+
+            <section>
+                <h2>📏 calc()</h2>
+                <p class="function-demo calc-box">
+                    This box width is calculated using:
+                    <code>width: calc(100% - 60px)</code>
+                </p>
+            </section>
+
+            <section>
+                <h2>📐 clamp()</h2>
+                <p class="function-demo clamp-box">
+                    This text size is responsive using:
+                    <code>font-size: clamp(1rem, 2vw, 1.5rem)</code>
+                </p>
+            </section>
+
+            <section>
+                <h2>🎨 color-mix()</h2>
+                <p class="function-demo color-box">
+                    Background uses
+                    <code>color-mix(in srgb, black 50%, white)</code> for
+                    blending.
+                </p>
+            </section>
+
+            <section>
+                <h2>🏷️ attr()</h2>
+                <p class="function-demo attr-box" data-label="Attribute Label">
+                    Label shown from attribute using
+                    <code>content: attr(data-label)</code>.
+                </p>
+            </section>
+
+            <section>
+                <h2>🔄 transform()</h2>
+                <p class="function-demo transform-box">
+                    This box uses
+                    <code>transform: rotate(15deg) scale(1.1)</code> for visual
+                    effect.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
