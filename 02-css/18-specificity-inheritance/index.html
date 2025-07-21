@@ -1,0 +1,111 @@
+<!--
+    Topic: CSS Specificity & Inheritance
+    Purpose: Explain CSS specificity and inheritance concepts, demonstrating how styles are applied and overridden.
+    Features:
+      - Specificity hierarchy: inline styles, IDs, classes, element selectors
+      - Importance of !important
+      - Property inheritance and overriding
+      - Practical styled examples
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="CSS Specificity and Inheritance concepts with practical examples"
+        />
+        <meta
+            name="keywords"
+            content="CSS, specificity, inheritance, selectors, cascade, !important"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Specificity & Inheritance</title>
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>CSS Specificity &amp; Inheritance</h1>
+            <p>
+                CSS specificity determines which style rule is applied when
+                multiple selectors target the same element. Specificity ranks
+                (from highest to lowest) are inline styles, ID selectors, class
+                selectors, and element selectors. The
+                <code>!important</code> rule overrides all specificity rules.
+            </p>
+
+            <!-- Specificity Demonstration -->
+            <section>
+                <h2>Specificity Hierarchy in Action</h2>
+                <p>
+                    Boxes below demonstrate styles applied by selectors with
+                    different specificity levels. Higher specificity styles
+                    override lower ones.
+                </p>
+
+                <!-- Inline style: Highest specificity -->
+                <div
+                    class="spec-box inline-style"
+                    style="color: darkorange; font-weight: 900"
+                >
+                    Inline Style (Highest specificity, overrides all except
+                    !important)
+                </div>
+
+                <!-- ID selector: Higher than class and element -->
+                <div id="id-selector" class="spec-box id-selector">
+                    ID Selector (Higher than class and element selectors)
+                </div>
+
+                <!-- Class selector: Higher than element -->
+                <div class="spec-box class-selector">
+                    Class Selector (Higher than element selector)
+                </div>
+
+                <!-- Element selector: Lowest specificity -->
+                <div class="spec-box element-selector">
+                    Element Selector (Lowest specificity)
+                </div>
+
+                <!-- !important rule: overrides all others -->
+                <div class="spec-box important-style">
+                    Using <code>!important</code> (Overrides all specificity
+                    rules)
+                </div>
+            </section>
+
+            <!-- Inheritance Demonstration -->
+            <section>
+                <h2>Inheritance of Properties</h2>
+                <p>
+                    Parent sets font-family and color; child elements inherit
+                    unless they override these properties.
+                </p>
+
+                <div class="inheritance-parent">
+                    This text inherits color <code>#555</code> and
+                    font-family.<br />
+                    <p class="inheritance-child">
+                        Child paragraph inherits these properties.
+                    </p>
+                    <p
+                        class="inheritance-child no-inherit"
+                        style="color: crimson"
+                    >
+                        This child overrides the inherited color.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

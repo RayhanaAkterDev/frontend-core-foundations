@@ -1,0 +1,69 @@
+/* style.css
+   CSS Specificity and Inheritance demonstration styles
+*/
+
+/* Base box style for specificity examples */
+.spec-box {
+    margin: 10px 0;
+    padding: 14px 20px;
+    border-radius: 10px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Inline style - Highest specificity (color set inline in HTML) */
+.inline-style {
+    background-color: #ffe4c4; /* Light bisque */
+    color: #b35900; /* Dark burnt orange (inline style overrides color) */
+}
+
+/* ID selector - High specificity */
+#id-selector {
+    background-color: #cce3de; /* Soft mint */
+    color: #2f4f4f; /* Dark slate gray */
+}
+
+/* Class selector - Medium specificity */
+.class-selector {
+    background-color: #d0d6f0; /* Light periwinkle blue */
+    color: #283149; /* Dark blue */
+}
+
+/* Element selector - Low specificity */
+.element-selector {
+    background-color: #e9ecef; /* Light grayish blue */
+    color: #495057; /* Medium dark gray */
+}
+
+/* !important style - Overrides all */
+.important-style {
+    background-color: #f3d6e4; /* Pale pink */
+    color: #8b1e3f !important; /* Dark raspberry */
+    font-style: italic;
+}
+
+/* Parent container for inheritance demo */
+.inheritance-parent {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5a5a5a; /* Medium gray */
+    border: 2px solid #c0c0c0;
+    padding: 24px;
+    margin-top: 28px;
+    border-radius: 12px;
+    background-color: #f8f9fa; /* Very light gray */
+}
+
+/* Children inherit font-family and color */
+.inheritance-child {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Child overrides inherited color */
+.no-inherit {
+    font-weight: 700;
+    color: #b22222; /* Firebrick red */
+}
