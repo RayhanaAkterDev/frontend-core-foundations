@@ -1,0 +1,94 @@
+<!--
+    Topic: CSS Positioning & Z-Index
+    Purpose: To understand how to position elements using static, relative, absolute, fixed, and sticky positioning, and manage their stacking order with z-index.
+    Features:
+    - Apply different position values (static, relative, absolute, fixed, sticky)
+    - Control element offsets with top, right, bottom, left
+    - Use z-index to manage overlapping elements
+    - Observe positioning effects in visual layout
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Explore how CSS positioning and z-index affect layout and stacking order of elements."
+        />
+        <meta
+            name="keywords"
+            content="CSS, position, z-index, absolute, relative, fixed, sticky"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Positioning & Z-Index</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>CSS Positioning & Z-Index</h1>
+            <p>
+                Learn how elements can be positioned and layered visually using
+                CSS positioning and the z-index property.
+            </p>
+        </header>
+
+        <main>
+            <!-- Static Position (default) -->
+            <section>
+                <h2>Static Position (Default)</h2>
+                <div class="box static">Static</div>
+            </section>
+
+            <!-- Relative Position -->
+            <section>
+                <h2>Relative Position</h2>
+                <div class="box relative">Relative (offset from original)</div>
+            </section>
+
+            <!-- Absolute Position -->
+            <section>
+                <h2>Absolute Position</h2>
+                <div class="box absolute-container">
+                    <div class="box absolute">Absolute (inside container)</div>
+                </div>
+            </section>
+
+            <!-- Fixed Position -->
+            <section>
+                <h2>Fixed Position</h2>
+                <div class="box fixed">Fixed (stays on screen)</div>
+            </section>
+
+            <!-- Sticky Position -->
+            <section>
+                <h2>Sticky Position</h2>
+                <div class="sticky-wrapper">
+                    <p>Scroll to see sticky behavior →</p>
+                    <div class="box sticky">Sticky (sticks on scroll)</div>
+                </div>
+            </section>
+
+            <!-- Z-Index Example -->
+            <section>
+                <h2>Z-Index Example</h2>
+                <div class="z-container">
+                    <div class="z-box box1">Z-1</div>
+                    <div class="z-box box2">Z-2</div>
+                    <div class="z-box box3">Z-3</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
