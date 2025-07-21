@@ -1,0 +1,121 @@
+<!--
+    Topic: CSS Best Practices & Optimization
+    Purpose: Provide guidelines and techniques to write efficient, maintainable, and performant CSS.
+    Features:
+      - Naming conventions and organization
+      - Performance tips like minimizing selectors and CSS size
+      - Using shorthand properties and avoiding redundancy
+      - Tools and strategies for CSS optimization
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Best practices and optimization techniques for writing efficient and maintainable CSS."
+        />
+        <meta
+            name="keywords"
+            content="css, best practices, optimization, performance, maintainability"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Best Practices & Optimization</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>CSS Best Practices & Optimization</h1>
+            <p>
+                Writing efficient and maintainable CSS is crucial for scalable
+                web projects. This topic covers guidelines to improve CSS
+                performance and organization.
+            </p>
+
+            <!-- 🔹 Naming Conventions -->
+            <section>
+                <h2>1. Use Clear and Consistent Naming</h2>
+                <p>
+                    Use meaningful, descriptive class names that follow a
+                    consistent pattern (e.g., BEM). Avoid vague names like
+                    <code>.box</code> or <code>.red</code>.
+                </p>
+            </section>
+
+            <!-- 🔹 Selector Performance -->
+            <section>
+                <h2>2. Optimize Selectors for Performance</h2>
+                <p>
+                    Keep selectors simple and avoid deep nesting. Browsers read
+                    selectors right-to-left, so more specific selectors with
+                    fewer levels improve rendering speed.
+                </p>
+                <p>
+                    Example: Prefer <code>.btn-primary</code> over
+                    <code>div.container ul li a.btn-primary</code>.
+                </p>
+            </section>
+
+            <!-- 🔹 Minimize CSS Size -->
+            <section>
+                <h2>3. Minimize CSS Size</h2>
+                <p>
+                    Remove unused styles and avoid duplication. Use shorthand
+                    properties (e.g., <code>margin: 10px 5px;</code>) to reduce
+                    code length.
+                </p>
+            </section>
+
+            <!-- 🔹 Avoid !important -->
+            <section>
+                <h2>4. Avoid Using <code>!important</code></h2>
+                <p>
+                    Overusing <code>!important</code> makes debugging difficult
+                    and breaks natural CSS cascading. Use specificity and proper
+                    structure instead.
+                </p>
+            </section>
+
+            <!-- 🔹 Use CSS Variables -->
+            <section>
+                <h2>5. Use CSS Variables for Maintainability</h2>
+                <p>
+                    Define colors, fonts, and spacing as variables for easy
+                    theme changes and consistency.
+                </p>
+                <pre><code>:root {
+  --primary-color: #3498db;
+  --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+</code></pre>
+            </section>
+
+            <!-- 🔹 Tools & Automation -->
+            <section>
+                <h2>6. Use Tools for Optimization</h2>
+                <p>
+                    Employ tools like CSS minifiers, autoprefixers, and linters
+                    to automate optimization and enforce style rules.
+                </p>
+            </section>
+
+            <!-- 🔹 Keep It Modular -->
+            <section>
+                <h2>7. Write Modular CSS</h2>
+                <p>
+                    Organize styles into small, reusable components or modules
+                    for easier maintenance and scalability.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
