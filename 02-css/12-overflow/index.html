@@ -1,0 +1,98 @@
+<!--
+    Topic: CSS Overflow
+    Purpose: To explain the CSS overflow property and its values for controlling content that exceeds the size of its container.
+    Features:
+      - Understanding overflow behavior
+      - Different overflow values: visible, hidden, scroll, auto
+      - Controlling overflow in both horizontal and vertical directions
+      - Practical use cases for managing content clipping and scrollbars
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="CSS Overflow property and its control of content exceeding container size"
+        />
+        <meta
+            name="keywords"
+            content="CSS, overflow, scroll, hidden, auto, content clipping"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Overflow</title>
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>CSS Overflow</h1>
+            <p>
+                The CSS <code>overflow</code> property controls how content that
+                exceeds the dimensions of a container is displayed. It defines
+                whether content is clipped, hidden, or scrollable.
+            </p>
+
+            <!-- Section demonstrating overflow: visible -->
+            <section>
+                <h2>Overflow: visible</h2>
+                <p>
+                    This is the default behavior where content spills out of the
+                    container.
+                </p>
+                <div class="box overflow-visible">
+                    This box has more text than it can contain, so the overflow
+                    is visible and spills outside.
+                </div>
+            </section>
+
+            <!-- Section demonstrating overflow: hidden -->
+            <section>
+                <h2>Overflow: hidden</h2>
+                <p>The overflowing content is clipped and hidden from view.</p>
+                <div class="box overflow-hidden">
+                    This box clips the overflowing content and hides the excess
+                    text. The text is long enough to overflow the box.
+                </div>
+            </section>
+
+            <!-- Section demonstrating overflow: scroll -->
+            <section>
+                <h2>Overflow: scroll</h2>
+                <p>
+                    Scrollbars are always visible, allowing access to all
+                    content.
+                </p>
+                <div class="box overflow-scroll">
+                    This box has so much text that it will overflow its fixed
+                    size and scrollbars will appear allowing you to scroll and
+                    see all the content inside this container. Keep adding
+                    enough text to ensure overflow happens.
+                </div>
+            </section>
+
+            <!-- Section demonstrating overflow: auto -->
+            <section>
+                <h2>Overflow: auto</h2>
+                <p>
+                    Scrollbars appear only if the content is larger than the
+                    container.
+                </p>
+                <div class="box overflow-auto">
+                    This box shows scrollbars only when the content exceeds
+                    container size. The content here is also long enough to
+                    overflow and show scrollbars.
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

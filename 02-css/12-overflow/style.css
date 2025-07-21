@@ -1,0 +1,38 @@
+/*
+  style.css
+  CSS Overflow basic demonstration styles
+  Defines consistent box sizing, colors, and layout for overflow examples.
+*/
+
+/* Base styles for all boxes demonstrating overflow */
+.box {
+    width: 240px;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    overflow-wrap: break-word;
+    margin-top: 5px;
+    user-select: none;
+}
+
+/* Overflow behavior for visible (default) */
+.overflow-visible {
+    overflow: visible;
+}
+
+/* Overflow behavior for hidden */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Overflow behavior for scroll - always show scrollbars */
+.overflow-scroll {
+    overflow: scroll;
+}
+
+/* Overflow behavior for auto - scrollbars appear if needed */
+.overflow-auto {
+    overflow: auto;
+}
