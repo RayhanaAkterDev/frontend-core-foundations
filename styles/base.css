@@ -13,7 +13,7 @@
 /* Body and page layout */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #dddfe2;
+    background-color: #f5f7fa; /* softened light gray-blue */
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
@@ -59,7 +59,8 @@ li {
 
 /* Utility to style inline code elements */
 code {
-    background-color: #eaeaea;
+    background-color: #d6e4f0; /* lighter background */
+    color: #1a1a1a; /* dark text for contrast */
     padding: 0.15em 0.3em;
     border-radius: 3px;
     font-family: Consolas, Monaco, 'Courier New', monospace;
