@@ -1,0 +1,88 @@
+<!--
+    Topic: CSS Flexbox
+    Purpose: To explain CSS Flexible Box Layout Module (Flexbox), which provides an efficient way to lay out, align, and distribute space among items in a container, even when their size is unknown or dynamic.
+    Features:
+      - Flexible container and item properties
+      - Main axis and cross axis control
+      - Alignment, justification, and ordering
+      - Responsive layout capabilities
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="CSS Flexbox layout concepts, properties, and practical examples"
+        />
+        <meta
+            name="keywords"
+            content="CSS, Flexbox, layout, alignment, responsive"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Flexbox</title>
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>CSS Flexbox</h1>
+            <p>
+                CSS Flexible Box Layout (Flexbox) is a one-dimensional layout
+                method for arranging items in rows or columns. It helps to
+                distribute space dynamically and align items inside a container
+                even when their sizes are unknown or dynamic. Flexbox excels at
+                building flexible and responsive layouts quickly.
+            </p>
+
+            <section>
+                <h2>Basic Flex Container</h2>
+                <div class="flex-container flex-row justify-start align-center">
+                    <div class="flex-item">Item 1</div>
+                    <div class="flex-item">Item 2</div>
+                    <div class="flex-item">Item 3</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Flex Direction: Column</h2>
+                <div
+                    class="flex-container flex-column justify-center align-center"
+                >
+                    <div class="flex-item">Item A</div>
+                    <div class="flex-item">Item B</div>
+                    <div class="flex-item">Item C</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Justify Content: Space Between</h2>
+                <div
+                    class="flex-container flex-row justify-between align-center"
+                >
+                    <div class="flex-item">Left</div>
+                    <div class="flex-item">Center</div>
+                    <div class="flex-item">Right</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Align Items: Flex End</h2>
+                <div class="flex-container flex-row justify-center align-end">
+                    <div class="flex-item" style="height: 50px">Short</div>
+                    <div class="flex-item" style="height: 100px">Medium</div>
+                    <div class="flex-item" style="height: 130px">Tall</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
