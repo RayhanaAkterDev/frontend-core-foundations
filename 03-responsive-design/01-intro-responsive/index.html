@@ -1,0 +1,109 @@
+<!--
+Topic: Introduction to Responsive Design & Viewport Meta Tag
+Purpose: Teach the fundamentals of responsive web design and the importance of the viewport meta tag
+Features:
+- Explain the concept of responsive design
+- Describe the role of the viewport meta tag
+- Demonstrate how viewport affects mobile device rendering
+- Provide a simple responsive example
+Author: Rayhana Akter Sumaya
+Email: rayhanaaktersumaya.dev@gmail.com
+Date: 2025-07-21
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Viewport meta tag to control layout on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Introduction to Responsive Design & Viewport Meta Tag"
+        />
+        <meta
+            name="keywords"
+            content="responsive design, viewport, mobile-first, css, web design"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+
+        <!-- Page title -->
+        <title>Introduction to Responsive Design & Viewport Meta Tag</title>
+
+        <!-- Reset CSS: Normalize browser default styles for consistency -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout and typography styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Custom styles for this page -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>Introduction to Responsive Design & Viewport Meta Tag</h1>
+            <p>
+                Responsive web design is a modern web development approach that
+                ensures websites look and work well across a variety of devices
+                and screen sizes. The viewport meta tag plays a crucial role in
+                controlling how a webpage is displayed on mobile devices.
+            </p>
+
+            <!-- Section: What is Responsive Design? -->
+            <section>
+                <h2>What is Responsive Design?</h2>
+                <p>
+                    Responsive design means creating web layouts that adapt
+                    fluidly to different screen sizes, from large desktop
+                    monitors to small smartphone screens. This is typically
+                    achieved using flexible grids, images, and CSS media
+                    queries.
+                </p>
+            </section>
+
+            <!-- Section: The Viewport Meta Tag -->
+            <section>
+                <h2>The Viewport Meta Tag</h2>
+                <p>
+                    The viewport meta tag instructs the browser on how to
+                    control the page's dimensions and scaling on mobile devices.
+                </p>
+                <!-- Code example showing the viewport meta tag syntax -->
+                <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+                <p>Explanation:</p>
+                <ul>
+                    <li>
+                        <code>width=device-width</code> sets the viewport width
+                        to the device's screen width.
+                    </li>
+                    <li>
+                        <code>initial-scale=1.0</code> sets the initial zoom
+                        level when the page is first loaded.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Section: Why Is the Viewport Meta Tag Important? -->
+            <section>
+                <h2>Why Is the Viewport Meta Tag Important?</h2>
+                <p>
+                    Without the viewport meta tag, mobile browsers may display
+                    web pages with a desktop screen width scaled down, making
+                    content appear tiny and hard to read. Using this tag helps
+                    ensure the layout fits properly on smaller screens.
+                </p>
+            </section>
+
+            <!-- Section: Example demonstrating responsive behavior -->
+            <section>
+                <h2>Example</h2>
+                <p>
+                    Resize the browser window or open this page on different
+                    devices to see the responsive behavior.
+                </p>
+                <!-- A box that resizes based on viewport width -->
+                <div class="responsive-box">
+                    This box resizes according to the viewport width.
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
