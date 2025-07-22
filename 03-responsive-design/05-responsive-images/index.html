@@ -1,0 +1,103 @@
+<!--
+  Topic: Responsive Images in CSS
+  Purpose: Learn how to make images adapt to various screen sizes using different responsive techniques.
+  Features:
+    - Basic fluid image with max-width
+    - Responsive images using srcset
+    - Art direction using picture element
+    - Cropping and scaling with object-fit
+  Author: Rayhana Akter Sumaya
+  Email: rayhanaaktersumaya.dev@gmail.com
+  Date: 2025-07-15
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Template page demonstrating responsive image techniques using CSS and HTML."
+        />
+        <meta name="keywords" content="Responsive Images, CSS, Frontend" />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Responsive Images</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Responsive Images</h1>
+            <p>
+                Explore techniques to make images adapt smoothly to various
+                screen sizes.
+            </p>
+        </header>
+
+        <main>
+            <!-- Method 1: Basic fluid image -->
+            <section>
+                <h2>1. Basic Responsive Image</h2>
+                <img
+                    src="../../assets/images/basic-responsive.jpg"
+                    alt="Basic responsive image"
+                    class="img-responsive"
+                />
+            </section>
+
+            <!-- Method 2: Using srcset -->
+            <section>
+                <h2>2. Responsive with Srcset</h2>
+                <img
+                    src="../../assets/images/sample-small.jpg"
+                    srcset="
+                        ../../assets/images/sample-small.jpg   480w,
+                        ../../assets/images/sample-medium.jpg  768w,
+                        ../../assets/images/sample-large.jpg  1024w
+                    "
+                    sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1024px"
+                    alt="Responsive image using srcset"
+                    class="img-responsive"
+                />
+            </section>
+
+            <!-- Method 3: Picture element for art direction -->
+            <section>
+                <h2>3. Picture Element for Art Direction</h2>
+                <picture>
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="../../assets/images/pic-small.jpg"
+                    />
+                    <source
+                        media="(max-width: 1024px)"
+                        srcset="../../assets/images/pic-medium.jpg"
+                    />
+                    <img
+                        src="../../assets/images/pic-large.jpg"
+                        alt="Different images based on screen size"
+                        class="img-responsive"
+                    />
+                </picture>
+            </section>
+
+            <!-- Method 4: Fixed container with object-fit -->
+            <section>
+                <h2>4. Object-Fit Example</h2>
+                <div class="img-container">
+                    <img
+                        src="../../assets/images/object-fit.jpg"
+                        alt="Object-fit: cover"
+                        class="fit-cover"
+                    />
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
