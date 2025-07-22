@@ -53,4 +53,4 @@ See the following files in the _`mobile-vs-desktop`_ folder for a complete worki
 
 ## 🔙 Navigation
 
-- [← Back to CSS Topics](../README.md)
+- [← Back to Responsive-Design Topics](../README.md)
