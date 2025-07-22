@@ -1,0 +1,111 @@
+<!--
+Topic: Mobile-first vs Desktop-first Approach
+Purpose: Compare mobile-first and desktop-first strategies in responsive design
+Features:
+- Define mobile-first and desktop-first approaches
+- Explain their use in CSS media queries
+- Show practical examples for both methods
+- Recommend best practices for modern web development
+Author: Rayhana Akter Sumaya
+Email: rayhanaaktersumaya.dev@gmail.com
+Date: 2025-07-22
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Viewport meta tag for responsive scaling -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Understand the difference between Mobile-first and Desktop-first approaches in responsive web design"
+        />
+        <meta
+            name="keywords"
+            content="mobile-first, desktop-first, responsive, media queries, css strategy"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Mobile-first vs Desktop-first Approach</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>Mobile-first vs Desktop-first Approach</h1>
+            <p>
+                In responsive web design, the way you write and prioritize your
+                CSS can follow two strategies: mobile-first or desktop-first.
+                Understanding the difference helps you structure your styles
+                efficiently.
+            </p>
+
+            <!-- Section: Mobile-first Approach -->
+            <section>
+                <h2>📱 Mobile-first Approach</h2>
+                <p>
+                    Mobile-first design starts by targeting small screens (like
+                    phones) with base styles. You then progressively enhance the
+                    layout using
+                    <strong>min-width</strong> media queries for larger devices.
+                </p>
+                <pre><code>
+/* Base styles for mobile devices */
+.container {
+  font-size: 16px;
+}
+
+/* Styles for tablets and up */
+@media (min-width: 768px) {
+  .container {
+    font-size: 18px;
+  }
+}
+        </code></pre>
+            </section>
+
+            <!-- Section: Desktop-first Approach -->
+            <section>
+                <h2>🖥️ Desktop-first Approach</h2>
+                <p>
+                    Desktop-first design begins with styles for larger screens,
+                    then uses
+                    <strong>max-width</strong> media queries to scale down for
+                    smaller devices.
+                </p>
+                <pre><code>
+/* Base styles for desktop devices */
+.container {
+  font-size: 18px;
+}
+
+/* Styles for tablets and below */
+@media (max-width: 768px) {
+  .container {
+    font-size: 16px;
+  }
+}
+        </code></pre>
+            </section>
+
+            <!-- Section: Which to Use? -->
+            <section>
+                <h2>✅ Which Approach to Use?</h2>
+                <p>
+                    Modern best practice recommends the
+                    <strong>mobile-first approach</strong>:
+                </p>
+                <ul>
+                    <li>Aligns with progressive enhancement principles</li>
+                    <li>Delivers faster performance on mobile devices</li>
+                    <li>Fits well with the natural mobile user base growth</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

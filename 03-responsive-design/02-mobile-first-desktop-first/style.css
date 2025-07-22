@@ -1,0 +1,16 @@
+/* style.css */
+
+/* Default base styles (Mobile-first) */
+.container {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: skyblue; /* Green background on small devices */
+    /* basically max-width: 767px */
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+    .container {
+        background-color: pink; /* Overrides bg for larger screens */
+    }
+}
