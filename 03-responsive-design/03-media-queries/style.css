@@ -1,0 +1,108 @@
+/* style.css */
+
+/* Base styles: default for smallest phones (under 360px and fallback) */
+.responsive-box {
+    background-color: gray; /* Mobile default */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem; /* Mobile default font size */
+    transition: background-color 0.3s ease, border 0.3s ease;
+    border: 3px solid transparent;
+}
+
+/* Very small phones (360px and up) */
+@media (min-width: 360px) {
+    .responsive-box {
+        /* Optionally adjust styles for very small phones */
+        font-size: 1.05rem;
+        background-color: crimson;
+    }
+}
+
+/* Small phones (480px and up) */
+@media (min-width: 480px) {
+    .responsive-box {
+        background-color: darkorange;
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets portrait (600px and up) */
+@media (min-width: 600px) {
+    .responsive-box {
+        font-size: 1.15rem;
+        /* You can add layout changes here if needed */
+    }
+}
+
+/* Tablets landscape / small desktops (768px and up) */
+@media (min-width: 768px) {
+    .responsive-box {
+        background-color: royalblue;
+        font-size: 1.3rem;
+    }
+}
+
+/* Larger tablets / small desktops (900px and up) */
+@media (min-width: 900px) {
+    .responsive-box {
+        font-size: 1.35rem;
+    }
+}
+
+/* Medium desktops (992px and up) */
+@media (min-width: 992px) {
+    .responsive-box {
+        background-color: seagreen;
+        font-size: 1.4rem;
+    }
+}
+
+/* Large desktops (1200px and up) */
+@media (min-width: 1200px) {
+    .responsive-box {
+        background-color: teal;
+        font-size: 1.5rem;
+    }
+}
+
+/* Extra large desktops (1400px and up) */
+@media (min-width: 1400px) {
+    .responsive-box {
+        background-color: navy;
+        font-size: 1.6rem;
+    }
+}
+
+/* Landscape orientation */
+@media (orientation: landscape) {
+    .responsive-box {
+        border-style: dashed;
+        border-color: black;
+    }
+}
+
+/* Portrait orientation */
+@media (orientation: portrait) {
+    .responsive-box {
+        border-style: dotted;
+        border-color: green;
+    }
+}
+
+/* High resolution (Retina) screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .responsive-box::after {
+        content: 'High-res screen';
+        display: block;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #555;
+        background-color: red;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        white-space: nowrap;
+    }
+}

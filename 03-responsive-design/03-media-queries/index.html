@@ -1,0 +1,92 @@
+<!--
+Topic: Media Queries
+Purpose: Teach how media queries are used in CSS to apply styles based on screen size and device characteristics
+Features:
+- Explain media query syntax and rules
+- Show examples using min-width and max-width
+- Demonstrate common responsive breakpoints
+- Provide visual CSS output for resizing
+Author: Rayhana Akter Sumaya
+Email: rayhanaaktersumaya.dev@gmail.com
+Date: 2025-07-22
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Enable responsive scaling on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn how to use CSS media queries to build responsive websites"
+        />
+        <meta
+            name="keywords"
+            content="css, responsive design, media queries, breakpoints, min-width, max-width"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Media Queries in CSS</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>Media Queries in CSS</h1>
+            <p>
+                Media queries allow us to apply CSS rules conditionally based on
+                the characteristics of the user’s device, such as width, height,
+                resolution, and orientation.
+            </p>
+
+            <!-- Section: Syntax -->
+            <section>
+                <h2>🔧 Basic Syntax</h2>
+                <p>The most common format for a media query is:</p>
+                <pre><code>
+@media (condition) {
+  /* CSS rules */
+}
+        </code></pre>
+                <p>Example using screen width:</p>
+                <pre><code>
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+        </code></pre>
+            </section>
+
+            <!-- Section: Types -->
+            <section>
+                <h2>📐 Min-width vs Max-width</h2>
+                <ul>
+                    <li>
+                        <strong>min-width:</strong> Apply styles when the
+                        viewport is greater than or equal to a value (used in
+                        mobile-first design).
+                    </li>
+                    <li>
+                        <strong>max-width:</strong> Apply styles when the
+                        viewport is less than or equal to a value (used in
+                        desktop-first design).
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Section: Demo -->
+            <section>
+                <h2>🧪 Live Example</h2>
+                <div class="responsive-box">
+                    Resize the screen to see me change!
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
