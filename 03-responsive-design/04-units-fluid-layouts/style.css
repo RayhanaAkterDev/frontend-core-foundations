@@ -1,0 +1,91 @@
+/* ============================================
+   Topic: Units & Fluid Layouts
+   File: style.css
+   Description: Demonstrates CSS units & fluid layout techniques
+   ============================================ */
+
+/* General Box Styles */
+.box {
+    padding: 1rem;
+    border: 2px solid #444;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: #e9f5ff;
+    font-weight: bold;
+}
+
+/* Absolute Unit Box */
+.px-box {
+    width: 200px;
+    background-color: #ffdede;
+}
+
+/* Percentage Width Box */
+.percent-box {
+    width: 50%;
+    background-color: #defde0;
+}
+
+/* REM Width Box */
+.rem-box {
+    width: 20rem;
+    background-color: #fff3cd;
+}
+
+/* VW Width Box */
+.vw-box {
+    width: 30vw;
+    background-color: #d6e4ff;
+}
+
+/* Headings */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Layout Section Spacing */
+.unit-demo,
+.fluid-layout {
+    margin: 2rem 0;
+}
+
+/* 🌊 Fluid Layout Container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #004f99;
+    border-radius: 0 0 50px 50px;
+    color: white;
+    padding: 2rem;
+}
+
+/* 📏 Fluid Header using Viewport Units */
+.header-bar {
+    width: 100vw;
+    height: 10vh;
+    line-height: 10vh;
+    background-color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: calc(-10vw + 2rem);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 📰 Content Section */
+.content {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+/* 🦶 Footer Section */
+.footer {
+    padding: 1rem;
+    background-color: #003366;
+    border-radius: 0 0 50px 50px;
+    font-size: 1rem;
+}

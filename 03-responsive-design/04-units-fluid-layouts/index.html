@@ -1,0 +1,97 @@
+<!--
+  Topic: Units & Fluid Layouts
+  Purpose: Learn how to build responsive layouts using CSS units: absolute, relative, and viewport-based.
+  Features:
+  - Absolute vs Relative units
+  - px, %, em, rem, vw, vh
+  - Fluid containers using % and max-width
+  - Viewport-based headers and positioning with calc()
+  Author: Rayhana Akter Sumaya
+  Email: rayhanaaktersumaya.dev@gmail.com
+  Date: 2025-07-22
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn CSS units and fluid layouts for responsive design."
+        />
+        <meta
+            name="keywords"
+            content="css, units, px, em, rem, vw, vh, fluid layout, responsive"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Units & Fluid Layouts</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Utility CSS: Helper classes for spacing, alignment, etc. -->
+        <link rel="stylesheet" href="../../styles/utility.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <h1>Units & Fluid Layouts</h1>
+            <p>
+                Master both absolute and relative units to build responsive
+                layouts in CSS.
+            </p>
+        </header>
+
+        <main>
+            <!-- Absolute Units Section -->
+            <section class="unit-demo absolute-units">
+                <h2>Absolute Units</h2>
+                <p>
+                    <code>px</code>, <code>pt</code>, <code>in</code> —
+                    fixed-size units not responsive to screen size.
+                </p>
+                <div class="box px-box">Box with 200px width</div>
+            </section>
+
+            <!-- Relative Units Section -->
+            <section class="unit-demo relative-units">
+                <h2>Relative Units</h2>
+                <p>
+                    <code>%</code>, <code>em</code>, <code>rem</code>,
+                    <code>vw</code>, <code>vh</code> — adapt to font, parent or
+                    viewport.
+                </p>
+                <div class="box percent-box">Box with 50% width</div>
+                <div class="box rem-box">Box with 20rem width</div>
+                <div class="box vw-box">Box with 30vw width</div>
+            </section>
+
+            <!-- Fluid Layout Showcase -->
+            <section class="fluid-layout">
+                <h2>Fluid Layout Demo</h2>
+                <p>
+                    This demo uses relative units and viewport techniques to
+                    create a responsive structure.
+                </p>
+
+                <div class="container">
+                    <div class="header-bar">Fluid Header (10vh height)</div>
+                    <article class="content">
+                        <p>
+                            This container is 80% wide, with a max-width of
+                            1200px for large screens.
+                        </p>
+                        <p>
+                            Combines fluid width and viewport-based spacing
+                            using <code>calc()</code>.
+                        </p>
+                    </article>
+                    <footer class="footer text-center">Fluid Footer</footer>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
