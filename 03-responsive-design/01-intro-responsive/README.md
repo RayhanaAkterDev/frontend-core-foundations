@@ -47,4 +47,4 @@ See the following files in the _`introduction-to-responsive-design`_ folder for 
 
 ## 🔙 Navigation
 
-- [← Back to CSS Topics](../README.md)
+- [← Back to Responsive-Design Topics](../README.md)
