@@ -61,6 +61,16 @@
 
 ---
 
+## 5. [MERGING & CONFLICT RESOLUTION](07-merging-conflicts.md)
+
+- `git merge <branch-name>` — Merge the specified branch into the current branch  
+- `git status` — View merge conflicts and file status during a merge  
+- `git add <file>` — Mark conflict as resolved by staging the file  
+- `git commit` — Complete the merge after resolving conflicts  
+- `git merge --abort` — Abort the merge and revert to the previous state  
+
+---
+
 ## 🔙 Navigation
 
-- [← Back to Git & GitHub Topics](../README.md)
+- [← Back to Git & GitHub Topics](README.md)
