@@ -133,8 +133,11 @@
 
 - `git rebase <branch>` — Reapply commits on current branch onto another branch  
 - `git rebase -i <commit-hash>` — Start interactive rebase to edit, squash, or reorder commits  
+- `git rebase -i HEAD~N` — Interactive rebase for last N commits  
+- `rm -rf .git/rebase-merge` — Remove rebase in-progress state to abort manually (use cautiously)  
 - `git rebase --continue` — Continue rebase after resolving conflicts  
 - `git rebase --abort` — Abort rebase and return to original state  
+- `git push --force` — Force push rewritten history to remote (use carefully)  
 
 ---
 
