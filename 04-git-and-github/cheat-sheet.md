@@ -129,6 +129,17 @@
 
 ---
 
+## 11. [GIT REFLOG](13-git-reflog.md)
+
+- `git reflog` — View reference log of all HEAD and branch changes  
+- `git checkout HEAD@{n}` — Checkout a previous HEAD state from reflog  
+- `git branch <name> HEAD@{n}` — Create a branch from a previous state  
+- `git checkout <commit-hash>` — Checkout a lost commit using its hash  
+- `git reflog expire --expire=now --all` — Expire all reflog entries  
+- `git gc --prune=now --aggressive` — Clean up unreachable commits and expired reflog
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
