@@ -2,7 +2,7 @@
 
 ---
 
-## 1. SETUP & CONFIGURATION
+## 1. [SETUP & CONFIGURATION](02-install-configure-git.md)
 
 - `git --version` — Check installed Git version  
 - `git config --global user.name "Your Name"` — Set your Git username  
@@ -14,7 +14,7 @@
 
 ---
 
-## 2. INIT & FIRST COMMIT
+## 2. [INIT & FIRST COMMIT](03-basic-commands.md)
 
 - `git init` — Initialize Git in the current folder  
 - `git add filename.html` — Stage a specific file  
@@ -24,7 +24,7 @@
 
 ---
 
-## 3. TRACKING & HISTORY
+## 3. [TRACKING & HISTORY](04-git-status-diff-log.md)
 
 - `git status` — Check file status: staged, modified, or untracked  
 - `git diff` — View unstaged file differences  
