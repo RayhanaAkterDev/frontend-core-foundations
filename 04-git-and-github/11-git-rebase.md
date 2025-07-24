@@ -33,6 +33,7 @@ Use interactive mode to edit, squash, reorder, or drop commits:
 
 ```bash
 git rebase -i <commit-hash>
+git rebase -i HEAD~N
 ```
 
 - Opens an editor listing commits to be rebased.  
