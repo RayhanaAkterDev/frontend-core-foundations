@@ -35,10 +35,16 @@ This section walks through every major Git and GitHub concept in order — start
 
 ---
 
+## 📎 Useful Links
+
+- 📘 [Git Command Cheat Sheet](cheat-sheet.md)  
+
+---
+
 ## 📌 Notes
 
-- All topics are organized as individual markdown files for quick access.
-- This section builds real-world Git/GitHub proficiency step by step.
+- All topics are organized as individual markdown files for quick access.  
+- This section builds real-world Git/GitHub proficiency step by step.  
 - You’ll gain confidence in managing personal and team-based projects with version control.
 
 ---
