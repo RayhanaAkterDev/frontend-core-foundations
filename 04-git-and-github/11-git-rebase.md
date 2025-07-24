@@ -59,6 +59,21 @@ git rebase -i <commit-hash>
 
 ---
 
+## 💡 Pro Tip: Manual Cleanup During Rebase Issues
+
+If a rebase gets stuck or corrupted and git rebase --abort does not work, advanced users may manually delete the rebase state files:
+
+```bash
+rm -rf .git/rebase-merge
+```
+
+**Warning**: This is a low-level operation and can cause repository corruption if used incorrectly.
+It should only be done as a last resort when all standard Git commands fail.
+
+Always try `git rebase --abort` first to safely cancel a rebase.
+
+---
+
 ## 5️⃣ Rebase vs Merge
 
 | Aspect               | Rebase                         | Merge                          |
