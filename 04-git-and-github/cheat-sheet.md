@@ -140,6 +140,18 @@
 
 ---
 
+## 12. [GITHUB BASICS & REMOTE REPOSITORIES](14-github-basics.md)
+
+- `git remote add origin <url>` — Link local repo to remote on GitHub  
+- `git remote -v` — Show remote URLs associated with the repo  
+- `git push -u origin main` — Push to remote and set tracking for `main` branch  
+- `git push` — Push committed changes to default remote branch  
+- `git pull` — Fetch and merge changes from remote  
+- `git pull origin main` — Pull updates from the remote `main` branch  
+- `git clone <url>` — Clone a GitHub repo to your local machine  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
