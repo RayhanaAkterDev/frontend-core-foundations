@@ -46,6 +46,21 @@
 
 ---
 
+## 4. [BRANCHING](06-branches.md)
+
+- `git branch` — List all local branches  
+- `git branch -r` — List remote branches  
+- `git branch -a` — List all branches (local + remote)  
+- `git branch <branch-name>` — Create a new branch  
+- `git checkout <branch-name>` — Switch to a branch  
+- `git switch <branch-name>` — Switch to a branch (Git 2.23+)  
+- `git switch -c <branch-name>` — Create and switch to a new branch  
+- `git branch -d <branch-name>` — Delete a local branch (merged)  
+- `git branch -D <branch-name>` — Force delete a local branch (unmerged)  
+- `git merge <branch-name>` — Merge a branch into the current branch  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](../README.md)
