@@ -230,6 +230,17 @@
 
 ---
 
+## 22. [BEST PRACTICES FOR GIT COMMITS](22-commit-best-practices.md)
+
+- Write clear and concise commit messages in imperative mood  
+- Keep subject lines under 50 characters and separate from body  
+- Use body to explain what and why changes were made  
+- Make commits small, focused, and logically grouped  
+- Use prefixes like `feat:`, `fix:`, and tools like `git commit --amend` and `git rebase -i`  
+- Follow team/project commit message conventions  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
