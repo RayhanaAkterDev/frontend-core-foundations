@@ -1,0 +1,56 @@
+/* style.css */
+
+/* Container styling */
+.content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Multi-column article text */
+.multi-column-text {
+    column-count: 3; /* 3 columns */
+    column-gap: 2rem; /* space between columns */
+    column-rule: 1px solid #ccc; /* vertical separator */
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+/* Control column breaks for paragraphs if needed */
+.multi-column-text p {
+    break-inside: avoid; /* avoid breaking inside paragraphs */
+    margin-bottom: 1.25rem;
+}
+
+/* Multi-column list */
+.multi-column-list ul {
+    column-count: 2; /* 2 columns */
+    column-gap: 1.5rem;
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    color: #222;
+}
+
+/* Responsive Adjustments */
+
+/* Medium screens: fewer columns */
+@media (max-width: 900px) {
+    .multi-column-text {
+        column-count: 2;
+    }
+    .multi-column-list ul {
+        column-count: 1;
+    }
+}
+
+/* Small screens: single column */
+@media (max-width: 500px) {
+    .multi-column-text,
+    .multi-column-list ul {
+        column-count: 1;
+        column-gap: 0;
+        column-rule: none;
+    }
+}
