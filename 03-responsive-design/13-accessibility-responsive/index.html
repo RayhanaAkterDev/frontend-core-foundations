@@ -1,0 +1,87 @@
+<!--
+  Topic: Accessibility & Responsive Design
+  Purpose: To ensure responsive web interfaces are inclusive and usable for all users, including those with disabilities
+  Features:
+    - Focus on accessible responsive layout practices
+    - Combines ARIA roles with semantic HTML
+    - Keyboard and screen reader-friendly interactions
+    - Contrast, focus, and font adjustments for different viewports
+  Author: Rayhana Akter Sumaya
+  Email: rayhanaaktersumaya.dev@gmail.com
+  Date: 2025-07-24
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Ensure accessible responsive design for all users across devices and abilities."
+        />
+        <meta
+            name="keywords"
+            content="responsive design, accessibility, ARIA, semantic HTML, inclusive UI"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Accessibility & Responsive Design</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Accessibility & Responsive Design</h1>
+            <p>
+                Building interfaces that adapt and include everyone, across all
+                devices and abilities.
+            </p>
+        </header>
+
+        <main>
+            <!-- Accessible Responsive Navigation -->
+            <section class="nav-demo" aria-labelledby="navTitle">
+                <h2 id="navTitle">Responsive Navigation (Accessible)</h2>
+                <nav role="navigation" aria-label="Main navigation">
+                    <ul class="nav-menu">
+                        <li><a href="#" tabindex="0">Home</a></li>
+                        <li><a href="#" tabindex="0">About</a></li>
+                        <li><a href="#" tabindex="0">Services</a></li>
+                        <li><a href="#" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Responsive Text with High Contrast -->
+            <section class="content" aria-labelledby="accessText">
+                <h2 id="accessText">Contrast-Friendly Text</h2>
+                <p>
+                    Accessible text should maintain strong contrast and
+                    legibility across screen sizes. Adjust font size and
+                    contrast for readability on both light and dark themes.
+                </p>
+            </section>
+
+            <!-- Focus-visible form element -->
+            <section class="form-section" aria-labelledby="formTitle">
+                <h2 id="formTitle">Accessible Form Controls</h2>
+                <form>
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        aria-required="true"
+                    />
+
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
