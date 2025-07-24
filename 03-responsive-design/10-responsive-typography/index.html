@@ -1,0 +1,61 @@
+<!--
+Topic: Responsive Typography
+Purpose: Demonstrate techniques for making typography adapt fluidly to different screen sizes and devices
+Features:
+- Use of relative units (em, rem, vw)
+- CSS clamp() for fluid font sizing
+- Media queries for breakpoint adjustments
+- Accessibility considerations for readable text
+Author: Rayhana Akter Sumaya
+Email: rayhanaaktersumaya.dev@gmail.com
+Date: 2025-07-24
+-->
+
+<!DOCTYPE html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Responsive Typography techniques in CSS for adaptable text sizes"
+        />
+        <meta
+            name="keywords"
+            content="CSS, Responsive Typography, fluid font size, accessibility"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Responsive Typography Example</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="typography-demo">
+            <h1>Responsive Typography Example</h1>
+            <p>
+                এই উদাহরণে আমরা দেখব কিভাবে বিভিন্ন CSS টেকনিক ব্যবহার করে ফন্ট
+                সাইজ স্ক্রীনের আকার অনুযায়ী পরিবর্তন করা যায়, যাতে পড়া সহজ হয়
+                এবং ডিজাইন সুন্দর থাকে।
+            </p>
+            <section>
+                <h2>Fluid Font using clamp()</h2>
+                <p>
+                    এই প্যারাগ্রাফের ফন্ট সাইজ `clamp()` ব্যবহার করে দেয়া হয়েছে,
+                    যা ছোট থেকে বড় স্ক্রীন পর্যন্ত স্বয়ংক্রিয়ভাবে অ্যাডজাস্ট হয়।
+                </p>
+            </section>
+            <section>
+                <h2>Relative Units (em, rem, vw)</h2>
+                <p>
+                    রিলেটিভ ইউনিট ব্যবহার করলে টেক্সট সহজে স্কেল হয় এবং
+                    ব্যবহারকারীর ব্রাউজার সেটিংস অনুসারে অ্যাডজাস্ট হয়।
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
