@@ -199,6 +199,16 @@
 
 ---
 
+## 17. [SSH KEY SETUP FOR GITHUB](19-ssh-key-setup.md)
+
+- Generate SSH key with `ssh-keygen -t ed25519 -C "email@example.com"`  
+- Start ssh-agent: `eval "$(ssh-agent -s)"`  
+- Add private key to agent: `ssh-add ~/.ssh/id_ed25519`  
+- Copy public key contents and add to GitHub SSH keys in settings  
+- Test connection using: `ssh -T git@github.com`  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
