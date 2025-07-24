@@ -1,0 +1,79 @@
+<!--
+Topic: Responsive Flexbox Layout
+Purpose: Create an advanced, professional-level responsive layout using Flexbox with key properties that developers must master.
+Features:
+- Flex container properties: display, flex-direction, flex-wrap, justify-content, align-items, align-content
+- Flex item properties: flex-grow, flex-shrink, flex-basis, flex, order, align-self
+- Responsive breakpoints with media queries
+- Use of relative units (%, rem, vw)
+- Nested flex containers for complex layouts
+- Practical example with gallery and sidebar
+Author: Rayhana Akter Sumaya
+Email: rayhanaaktersumaya.dev@gmail.com
+Date: 2025-07-24
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Advanced Responsive Flexbox Layout with key professional properties and nested flex containers."
+        />
+        <meta
+            name="keywords"
+            content="CSS, Flexbox, Responsive Design, Flex-grow, Flex-shrink, Flex-basis, Media Queries"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Advanced Responsive Flexbox Layout</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <h1>Responsive Flexbox Layout</h1>
+            <p>
+                An advanced flexbox example with nested containers and
+                responsive breakpoints.
+            </p>
+        </header>
+
+        <main class="flex-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Tasks</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <section class="content-area">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                    <div class="gallery-item">Item 1</div>
+                    <div class="gallery-item">Item 2</div>
+                    <div class="gallery-item">Item 3</div>
+                    <div class="gallery-item">Item 4</div>
+                    <div class="gallery-item">Item 5</div>
+                    <div class="gallery-item">Item 6</div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 Sumaya. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
