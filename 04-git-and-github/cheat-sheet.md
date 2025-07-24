@@ -32,3 +32,9 @@
 - `git log` — View detailed commit history  
 - `git log --oneline` — View short one-line-per-commit summary  
 - `git show <commit-hash>` — View the content of a specific commit  
+
+---
+
+## 🔙 Navigation
+
+- [← Back to Git & GitHub Topics](../README.md)
