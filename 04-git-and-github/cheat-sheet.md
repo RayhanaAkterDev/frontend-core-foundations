@@ -97,6 +97,19 @@
 
 ---
 
+## 8. [GIT TAG](10-git-tag.md)
+
+- `git tag` — List all tags in the repository  
+- `git tag <tagname>` — Create a lightweight tag  
+- `git tag -a <tagname> -m "message"` — Create an annotated tag with a message  
+- `git show <tagname>` — View details of a tag  
+- `git push origin <tagname>` — Push a specific tag to remote  
+- `git push origin --tags` — Push all tags to remote  
+- `git checkout <tagname>` — Checkout a tag (detached HEAD state)  
+- `git checkout -b <branch> <tagname>` — Create a new branch from a tag  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
