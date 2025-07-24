@@ -209,6 +209,16 @@
 
 ---
 
+## 18. [GITHUB ISSUES & PROJECT BOARDS](20-github-issues-projects.md)
+
+- Create and manage issues to track bugs, features, and tasks  
+- Use labels, assignees, and milestones for issue organization  
+- Link issues with commits and pull requests for traceability  
+- Use project boards to visualize workflow with columns and cards  
+- Move cards to track progress and automate workflows with GitHub Actions  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
