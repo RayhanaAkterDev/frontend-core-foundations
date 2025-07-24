@@ -219,6 +219,17 @@
 
 ---
 
+## 19. [GITHUB ACTIONS (CI/CD AUTOMATION)](21-github-actions.md)
+
+- Define workflows with YAML files in `.github/workflows/`  
+- Trigger workflows on events like push, pull request, or schedule  
+- Use jobs and steps to organize automation tasks  
+- Utilize GitHub-hosted runners or self-hosted runners  
+- Leverage marketplace actions for reusable workflow steps  
+- Common uses: testing, building, deploying, linting, and notifications  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
