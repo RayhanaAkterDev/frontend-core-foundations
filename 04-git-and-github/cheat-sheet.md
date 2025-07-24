@@ -152,6 +152,18 @@
 
 ---
 
+## 13. [CONNECTING LOCAL TO REMOTE (PUSH, PULL, CLONE)](15-local-to-remote.md)
+
+- `git remote add origin <url>` — Link local repository to a remote URL  
+- `git remote -v` — Show configured remote repositories  
+- `git push -u origin main` — Push local `main` branch and set upstream tracking  
+- `git push` — Push commits to the tracked remote branch  
+- `git pull` — Fetch and merge changes from the remote repository  
+- `git pull origin main` — Pull updates from the remote `main` branch explicitly  
+- `git clone <url>` — Clone a remote repository locally, setting up tracking  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
