@@ -230,7 +230,7 @@
 
 ---
 
-## 22. [BEST PRACTICES FOR GIT COMMITS](22-commit-best-practices.md)
+## 20. [BEST PRACTICES FOR GIT COMMITS](22-commit-best-practices.md)
 
 - Write clear and concise commit messages in imperative mood  
 - Keep subject lines under 50 characters and separate from body  
@@ -238,6 +238,16 @@
 - Make commits small, focused, and logically grouped  
 - Use prefixes like `feat:`, `fix:`, and tools like `git commit --amend` and `git rebase -i`  
 - Follow team/project commit message conventions  
+
+---
+
+## 21. [GIT SUBMODULES (ADVANCED)](23-git-submodules.md)
+
+- Embed external repositories as submodules inside a parent repo  
+- Add submodules using `git submodule add <url> [path]`  
+- Clone repos with submodules using `git clone --recurse-submodules`  
+- Update and commit submodule changes separately  
+- Remove submodules cleanly with `git submodule deinit` and `git rm`  
 
 ---
 
