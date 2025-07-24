@@ -173,6 +173,18 @@
 
 ---
 
+## 15. [PULL REQUESTS & COLLABORATION WORKFLOW](17-pull-requests.md)
+
+- Fork and clone repositories to work on code you don’t own  
+- Create feature branches for your changes: `git checkout -b feature-branch`  
+- Push feature branches to remote: `git push origin feature-branch`  
+- Open pull requests on GitHub to propose changes for review  
+- Collaborate via code review, discussions, and CI checks before merging  
+- Merge pull requests using merge commits, squash, or rebase strategies  
+- Delete feature branches after merging to keep the repo clean  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
