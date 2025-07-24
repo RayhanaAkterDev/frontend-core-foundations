@@ -1,0 +1,75 @@
+<!--
+Topic: CSS Grid for Responsive Layouts (Advanced)
+Purpose: Learn advanced CSS Grid techniques to build complex, responsive layouts that adapt seamlessly to different screen sizes.
+Features:
+- Responsive grid tracks using fractional units (fr) and minmax()
+- Grid template areas for semantic layout
+- Auto-fill and auto-fit for dynamic grid creation
+- Nesting grids for complex designs
+- Media queries integration with CSS Grid
+Author: Rayhana Akter Sumaya
+Email: rayhanaaktersumaya.dev@gmail.com
+Date: 2025-07-22
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Advanced CSS Grid techniques for responsive layouts"
+        />
+        <meta
+            name="keywords"
+            content="CSS Grid, responsive design, grid-template-areas, minmax, auto-fit, auto-fill"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Advanced CSS Grid for Responsive Layouts</title>
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Advanced CSS Grid for Responsive Layouts</h1>
+            <p>
+                Master complex and flexible grid layouts that adjust gracefully
+                across devices using advanced CSS Grid features.
+            </p>
+        </header>
+
+        <main>
+            <section class="grid-container">
+                <article class="item header">Header</article>
+                <article class="item sidebar">Sidebar</article>
+                <article class="item content">Main Content</article>
+                <article class="item ads">Advertisements</article>
+                <article class="item footer">Footer</article>
+            </section>
+
+            <section class="nested-grid">
+                <h2>Nested Grids Example</h2>
+                <div class="outer-grid">
+                    <div class="outer-item">Outer 1</div>
+                    <div class="outer-item nested">
+                        <div class="inner-grid">
+                            <div class="inner-item">Inner 1</div>
+                            <div class="inner-item">Inner 2</div>
+                            <div class="inner-item">Inner 3</div>
+                        </div>
+                    </div>
+                    <div class="outer-item">Outer 3</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Rayhana Akter Sumaya</p>
+        </footer>
+    </body>
+</html>

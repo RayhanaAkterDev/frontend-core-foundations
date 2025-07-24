@@ -1,0 +1,109 @@
+/* style.css */
+
+/* Grid Container with Template Areas */
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 150px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'header header header'
+        'sidebar content ads'
+        'footer footer footer';
+    gap: 1rem;
+    min-height: 60vh;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.header {
+    grid-area: header;
+    background-color: #4a90e2;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #50e3c2;
+    padding: 1rem;
+}
+
+.content {
+    grid-area: content;
+    background-color: #9013fe;
+    color: white;
+    padding: 1rem;
+}
+
+.ads {
+    grid-area: ads;
+    background-color: #f5a623;
+    padding: 1rem;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #7ed321;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'header'
+            'content'
+            'sidebar'
+            'ads'
+            'footer';
+    }
+}
+
+/* Nested Grid Example */
+.nested-grid .outer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    background: #eee;
+    padding: 1rem;
+}
+
+.outer-item {
+    background: #ccc;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Inner nested grid */
+.outer-item.nested .inner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+    gap: 0.5rem;
+    background: #ddd;
+    padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .outer-item.nested .inner-grid {
+        grid-template-columns: repeat(2, 1fr); /* Small screens: 2 columns */
+    }
+}
+
+@media (max-width: 400px) {
+    .outer-item.nested .inner-grid {
+        grid-template-columns: 1fr; /* Extra small: 1 column */
+    }
+}
+
+.inner-item {
+    background: #bbb;
+    padding: 0.5rem;
+    text-align: center;
+}
