@@ -11,6 +11,8 @@
 - `git config --list` — View all current Git configurations  
 - `git config --global alias.st status` — Create a shortcut: `git st`  
 - `git config --global color.ui auto` — Enable colored Git output in terminal  
+- `git config --global core.autocrlf true` — Handle line endings automatically (especially for Windows)  
+- `git config --global pull.rebase false` — Configure default pull behavior (merge vs rebase)  
 
 ---
 
@@ -41,8 +43,13 @@
 - `git log` — View detailed commit history  
 - `git log --oneline` — View short one-line-per-commit summary  
 - `git log --oneline --graph --all` — Visualize commit history with branches  
+- `git log --stat` — Show commit history with changed file statistics  
+- `git log --patch` or `git log -p` — Show commit history with diffs  
 - `git log -- <filename>` — View commit history for a specific file  
+- `git blame <file>` — Show who last modified each line in a file  
 - `git show <commit-hash>` — View the content and changes of a specific commit  
+- `git clean -f` — Remove untracked files (dangerous, use carefully)  
+- `git clean -fd` — Remove untracked files and directories  
 
 ---
 
@@ -58,6 +65,9 @@
 - `git branch -d <branch-name>` — Delete a local branch (merged)  
 - `git branch -D <branch-name>` — Force delete a local branch (unmerged)  
 - `git merge <branch-name>` — Merge a branch into the current branch  
+- `git checkout -` — Switch to the previous branch  
+- `git branch --merged` — List branches merged into current branch  
+- `git branch --no-merged` — List branches not merged yet  
 
 ---
 
@@ -68,6 +78,8 @@
 - `git add <file>` — Mark conflict as resolved by staging the file  
 - `git commit` — Complete the merge after resolving conflicts  
 - `git merge --abort` — Abort the merge and revert to the previous state  
+- `git mergetool` — Launch GUI merge tool for conflict resolution  
+- `git diff --merge` — View merge conflicts visually  
 
 ---
 
@@ -76,12 +88,15 @@
 - `git reset HEAD <file>` — Unstage a file (keep changes in working directory)  
 - `git reset --soft <commit>` — Move HEAD back, keep changes staged  
 - `git reset <commit>` — Move HEAD, unstage changes, keep working directory  
+- `git reset --mixed <commit>` — Move HEAD and unstage changes but keep working directory (default)  
 - `git reset --hard <commit>` — Discard all changes and reset everything  
 - `git revert <commit>` — Create a new commit that undoes a previous commit  
 - `git restore <file>` — Discard unstaged changes  
 - `git restore --staged <file>` — Unstage a file but keep changes  
 - `git reset --hard HEAD~1` — Delete the most recent commit (local only)  
-- `git push --force` — Force push (only if commit was already pushed)
+- `git commit --amend` — Modify last commit (message or staged changes)  
+- `git push --force` — Force push (only if commit was already pushed)  
+- `git stash save "message"` — Older stash command synonym for `git stash push -m`  
 
 ---
 
@@ -94,6 +109,8 @@
 - `git stash pop` — Reapply and remove the most recent stash  
 - `git stash push -m "message"` — Create a named stash with a message  
 - `git stash push <file>` — Stash changes only for specific files  
+- `git stash branch <branch-name>` — Create new branch from stash and apply it  
+- `git stash show -p stash@{n}` — Show diff of specific stash entry  
 - `git stash drop stash@{n}` — Delete a specific stash  
 - `git stash clear` — Remove all stashes  
 
@@ -138,7 +155,7 @@
 - `git branch <name> HEAD@{n}` — Create a branch from a previous state  
 - `git checkout <commit-hash>` — Checkout a lost commit using its hash  
 - `git reflog expire --expire=now --all` — Expire all reflog entries  
-- `git gc --prune=now --aggressive` — Clean up unreachable commits and expired reflog
+- `git gc --prune=now --aggressive` — Clean up unreachable commits and expired reflog  
 
 ---
 
@@ -146,6 +163,8 @@
 
 - `git remote add origin <url>` — Link local repo to remote on GitHub  
 - `git remote -v` — Show remote URLs associated with the repo  
+- `git remote remove <name>` — Remove a configured remote  
+- `git fetch` — Download objects and refs from remote but do not merge  
 - `git push -u origin main` — Push to remote and set tracking for `main` branch  
 - `git push` — Push committed changes to default remote branch  
 - `git pull` — Fetch and merge changes from remote  
@@ -162,6 +181,8 @@
 - `git push` — Push commits to the tracked remote branch  
 - `git pull` — Fetch and merge changes from the remote repository  
 - `git pull origin main` — Pull updates from the remote `main` branch explicitly  
+- `git pull --rebase` — Pull with rebase instead of merge (keeps history linear)  
+- `git fetch --all` — Fetch all remotes  
 - `git clone <url>` — Clone a remote repository locally, setting up tracking  
 
 ---
@@ -172,6 +193,7 @@
 - Use patterns like `/node_modules/`, `*.log`, `.env`, `.DS_Store`  
 - `.gitignore` affects only untracked files; use `git rm --cached <file>` to untrack files  
 - Configure global gitignore with `git config --global core.excludesfile ~/.gitignore_global`  
+- `git check-ignore -v <file>` — Check if and why a file is ignored  
 
 ---
 
@@ -240,6 +262,8 @@
 - Make commits small, focused, and logically grouped  
 - Use prefixes like `feat:`, `fix:`, and tools like `git commit --amend` and `git rebase -i`  
 - Follow team/project commit message conventions  
+- `git commit --verbose` — Show diff of changes in commit message editor  
+- `git log --author="name"` — Filter commits by author  
 
 ---
 
@@ -250,16 +274,20 @@
 - Clone repos with submodules using `git clone --recurse-submodules`  
 - Update and commit submodule changes separately  
 - Remove submodules cleanly with `git submodule deinit` and `git rm`  
+- `git submodule update --init --recursive` — Initialize and update submodules recursively  
+- `git submodule sync` — Synchronize submodule URLs  
 
 ---
 
-## 24. [GIT HOOKS (PRE-COMMIT, PRE-PUSH)](24-git-hooks.md)
+## 22. [GIT HOOKS (PRE-COMMIT, PRE-PUSH)](24-git-hooks.md)
 
 - Automate scripts triggered before commits and pushes  
 - Create hooks in `.git/hooks/` directory and make executable  
 - Use pre-commit hooks for tests, linting, formatting checks  
 - Use pre-push hooks for validations before pushing code  
 - Manage hooks easily with tools like Husky  
+- `chmod +x .git/hooks/pre-commit` — Make a hook executable  
+- `git config core.hooksPath <path>` — Configure a custom hooks directory  
 
 ---
 
