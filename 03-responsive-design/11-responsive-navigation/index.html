@@ -1,0 +1,74 @@
+<!--
+Topic: Responsive Navigation Patterns
+Purpose: Explore various navigation design patterns that adapt seamlessly to different screen sizes and devices
+Features:
+- Classic navigation types: horizontal navbar, hamburger menu, off-canvas menu
+- Responsive techniques using CSS media queries and JavaScript toggles
+- Accessibility best practices with ARIA roles and keyboard navigation
+- Modern CSS features like container queries and :has() selector
+- Use of CSS custom properties for dynamic theming
+- Mobile-first design approach and PWA integration considerations
+Author: Rayhana Akter Sumaya
+Email: rayhanaaktersumaya.dev@gmail.com
+Date: 2025-07-24
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Responsive Navigation Patterns covering classic and modern techniques for adaptive menus"
+        />
+        <meta
+            name="keywords"
+            content="CSS, Responsive Navigation, Hamburger Menu, Off-canvas, Accessibility, Container Queries"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Responsive Navigation Patterns</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav
+                class="main-nav"
+                role="navigation"
+                aria-label="Primary Navigation"
+            >
+                <button
+                    class="menu-toggle"
+                    aria-controls="primary-menu"
+                    aria-expanded="false"
+                    aria-label="Toggle menu"
+                >
+                    ☰
+                </button>
+                <ul id="primary-menu" class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Responsive Navigation Patterns</h1>
+            <p>
+                This topic covers various navigation design patterns that work
+                beautifully from mobile to desktop.
+            </p>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
