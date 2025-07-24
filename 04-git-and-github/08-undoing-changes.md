@@ -74,11 +74,32 @@ git revert <commit>
 
 ---
 
+## 4️⃣ 🔥 Delete the Last Commit (Local History Rewriting)
+
+To completely remove the most recent commit from your branch and local history:
+
+```bash
+git reset --hard HEAD~1
+```
+
+This removes the last commit **and** resets your working directory to match the previous state.
+
+If you've already pushed the commit to GitHub:
+
+```bash
+git push --force
+```
+
+> ⚠️ Force-pushing rewrites public history and should be done with caution, especially on shared branches.
+
+---
+
 ## 🧾 Summary
 
 - Use `git reset` for powerful, low-level undoing including changing branch HEAD and index state.  
 - Use `git revert` to safely undo changes in public/shared history by creating new commits.  
 - Use `git restore` for easier, intuitive undoing of local working directory and staging changes.  
+- Use `git reset --hard HEAD~1` to **permanently delete** the most recent commit in your local history.
 
 Choose commands based on whether you want to rewrite history or just fix local edits.
 
