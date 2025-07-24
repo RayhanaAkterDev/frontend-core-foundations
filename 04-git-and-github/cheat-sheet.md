@@ -83,6 +83,20 @@
 
 ---
 
+## 7. [GIT STASH](09-git-stash.md)
+
+- `git stash` — Save current changes and clean working directory  
+- `git stash list` — Show all saved stashes  
+- `git stash apply` — Reapply the most recent stash without removing it  
+- `git stash apply stash@{n}` — Reapply a specific stash  
+- `git stash pop` — Reapply and remove the most recent stash  
+- `git stash push -m "message"` — Create a named stash with a message  
+- `git stash push <file>` — Stash changes only for specific files  
+- `git stash drop stash@{n}` — Delete a specific stash  
+- `git stash clear` — Remove all stashes  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
