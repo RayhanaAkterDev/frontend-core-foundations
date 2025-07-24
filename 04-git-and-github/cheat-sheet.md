@@ -164,6 +164,15 @@
 
 ---
 
+## 14. [WORKING WITH .GITIGNORE](16-gitignore.md)
+
+- Create `.gitignore` file in root to specify files/folders to ignore  
+- Use patterns like `/node_modules/`, `*.log`, `.env`, `.DS_Store`  
+- `.gitignore` affects only untracked files; use `git rm --cached <file>` to untrack files  
+- Configure global gitignore with `git config --global core.excludesfile ~/.gitignore_global`  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
