@@ -251,6 +251,16 @@
 
 ---
 
+## 24. [GIT HOOKS (PRE-COMMIT, PRE-PUSH)](24-git-hooks.md)
+
+- Automate scripts triggered before commits and pushes  
+- Create hooks in `.git/hooks/` directory and make executable  
+- Use pre-commit hooks for tests, linting, formatting checks  
+- Use pre-push hooks for validations before pushing code  
+- Manage hooks easily with tools like Husky  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
