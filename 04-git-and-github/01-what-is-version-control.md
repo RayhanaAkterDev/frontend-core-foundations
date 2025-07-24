@@ -82,10 +82,13 @@ This foundational knowledge will empower you throughout your development journey
 
 ## ⏭️ Next Topic
 
-Proceed to **Setting Up Git and GitHub** where you will learn how to install Git, configure your system, and prepare your first GitHub repository for work.
+Proceed to the next topic — [Install & Configure Git](02-install-configure-git.md),  
+where you will learn how to install Git, configure your system,  
+and prepare your first GitHub repository for work.
 
 ---
 
 ## 🔙 Navigation
 
-[← Back to Git & GitHub Topics](../README.md)
+- [← Back to Git & GitHub Topics](../README.md)
+- [Git Command Cheat Sheet](cheat-sheet.md)
