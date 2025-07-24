@@ -119,6 +119,16 @@
 
 ---
 
+## 10. [GIT CHERRY-PICK](12-git-cherry-pick.md)
+
+- `git cherry-pick <commit-hash>` — Apply a specific commit to the current branch  
+- `git cherry-pick <start-commit>^..<end-commit>` — Apply a range of commits  
+- `git cherry-pick --continue` — Continue cherry-pick after resolving conflicts  
+- `git cherry-pick --abort` — Abort the cherry-pick process  
+- `git cherry-pick -e <commit-hash>` — Cherry-pick with commit message editing  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
