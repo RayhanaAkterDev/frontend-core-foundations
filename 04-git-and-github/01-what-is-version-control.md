@@ -90,5 +90,5 @@ and prepare your first GitHub repository for work.
 
 ## 🔙 Navigation
 
-- [← Back to Git & GitHub Topics](../README.md)
+- [← Back to Git & GitHub Topics](README.md)
 - [Git Command Cheat Sheet](cheat-sheet.md)
