@@ -1,0 +1,43 @@
+/* style.css for Container Query example */
+
+.card {
+    container-type: inline-size; /* Container query basis on width */
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.25rem 1.5rem;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.card h2 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Container query: When container width is 400px or less */
+@container (max-width: 400px) {
+    .card {
+        background-color: #e0f7fa;
+    }
+
+    .card h2 {
+        font-size: 24px;
+        color: #00796b;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: #004d40;
+    }
+}

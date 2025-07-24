@@ -1,0 +1,55 @@
+<!--
+Topic: Container Query
+Purpose: Demonstrate container queries in CSS for styling child elements based on container size
+Features:
+- Use of container-type property
+- Usage of @container query for responsive design based on container width
+- Responsive text size and color changes depending on container width
+Author: Rayhana Akter Sumaya
+Email: rayhanaaktersumaya.dev@gmail.com
+Date: 2025-07-24
+-->
+
+<!DOCTYPE html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Container Query example to style child elements based on container width"
+        />
+        <meta
+            name="keywords"
+            content="CSS, Container Query, Responsive Design, Frontend"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Container Query Example</title>
+
+        <!-- Reset CSS: Normalize browser defaults -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <!-- Base CSS: Common layout, typography, container styles -->
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <!-- Topic-specific CSS: Styles unique to this page/topic -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>কন্টেইনার কোয়েরি (Container Query) উদাহরণ</h1>
+            <p>
+                এই উদাহরণে আমরা দেখব কিভাবে CSS কন্টেইনার কোয়েরি ব্যবহার করে
+                কোনো ডিভ বা কন্টেইনারের নিজের আকারের ওপর ভিত্তি করে ভিতরের
+                এলিমেন্টগুলোর স্টাইল পরিবর্তন করা যায়।
+            </p>
+            <section class="card">
+                <h2>কন্টেইনার কোয়েরি কার্ড</h2>
+                <p>
+                    এই কার্ডের নিজের চওড়া অনুযায়ী এখানে লেখা ও রঙ পরিবর্তিত হবে।
+                    ব্রাউজারের আকার পরিবর্তন করলে কার্ডের সাইজ ছোট বা বড় হবে এবং
+                    সেটার ওপর ভিত্তি করে এই টেক্সটের ফন্ট সাইজ ও কালার পরিবর্তন
+                    হবে।
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
