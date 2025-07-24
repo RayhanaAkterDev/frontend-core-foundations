@@ -185,6 +185,20 @@
 
 ---
 
+## 16. [WORKING WITH FORKS](18-forks.md)
+
+- Fork repositories on GitHub to create a personal copy  
+- Clone your fork locally with `git clone <fork-url>`  
+- Add the original repo as upstream remote: `git remote add upstream <original-url>`  
+- Fetch and merge upstream changes regularly:  
+  `git fetch upstream`  
+  `git checkout main`  
+  `git merge upstream/main`  
+- Push feature branches to your fork: `git push origin feature-branch`  
+- Open pull requests from fork to original repository for contributions  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
