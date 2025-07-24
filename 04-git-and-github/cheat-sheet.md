@@ -71,6 +71,18 @@
 
 ---
 
+## 6. [UNDOING CHANGES](08-undoing-changes.md)
+
+- `git reset HEAD <file>` — Unstage a file, keep changes in working directory  
+- `git reset --soft <commit>` — Undo commits, keep changes staged  
+- `git reset <commit>` — Undo commits, unstage changes, keep working directory  
+- `git reset --hard <commit>` — Undo commits and discard all local changes (dangerous)  
+- `git revert <commit>` — Create a new commit that undoes a previous commit  
+- `git restore <file>` — Discard unstaged changes in working directory  
+- `git restore --staged <file>` — Unstage a file but keep changes in working directory  
+
+---
+
 ## 🔙 Navigation
 
 - [← Back to Git & GitHub Topics](README.md)
