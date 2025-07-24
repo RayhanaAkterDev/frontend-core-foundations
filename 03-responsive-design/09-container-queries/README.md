@@ -1,12 +1,7 @@
 # Container Query
 
 > Tags: css, responsive-design, container-query, frontend
-
----
-
-## 🧠 Purpose
-
-This note explains the concept of CSS Container Queries, a powerful feature that allows styling child elements based on the size of their container rather than the viewport. It aims to clarify the difference between container queries and media queries, demonstrate practical usage, and provide an easy-to-understand example.
+> **Purpose**: This note explains the concept of CSS Container Queries, a powerful feature that allows styling child elements based on the size of their container rather than the viewport. It aims to clarify the difference between container queries and media queries, demonstrate practical usage, and provide an easy-to-understand example.
 
 ---
 
@@ -73,4 +68,4 @@ See files in the _`container-query`_ folder for a complete working demo:
 
 ### 🔗 Navigation
 
-[⬅️ Back to Frontend Core Foundations README](../../README.md)
+[← Back to Frontend Core Foundations README](../../README.md)
